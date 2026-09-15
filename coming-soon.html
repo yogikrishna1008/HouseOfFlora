@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#a9bfa6"/>
+<title>House of Flora — Opening Soon</title>
+<meta name="description" content="House of Flora is a new label making contemporary Indian womenswear in small runs. Opening October 2026. Join the list to see the first collection."/>
+<link rel="canonical" href="https://houseofflora.com/"/>
+<meta property="og:title" content="House of Flora — Opening Soon"/>
+<meta property="og:description" content="Contemporary Indian womenswear, cut and finished in small runs. Opening October 2026."/>
+<meta property="og:type" content="website"/>
+<meta property="og:url" content="https://houseofflora.com/"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1610189028606-5459e43b4c2c?auto=format&fit=crop&w=1200&h=630&q=85"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23a9bfa6'/%3E%3Cg fill='%23fdfcf8'%3E%3Ccircle cx='16' cy='9' r='4.2'/%3E%3Ccircle cx='22.6' cy='13.8' r='4.2'/%3E%3Ccircle cx='20.1' cy='21.6' r='4.2'/%3E%3Ccircle cx='11.9' cy='21.6' r='4.2'/%3E%3Ccircle cx='9.4' cy='13.8' r='4.2'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23d99b90'/%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Organization","name":"House of Flora",
+"description":"Contemporary Indian womenswear, cut and finished in small runs.",
+"url":"https://houseofflora.com/","address":{"@type":"PostalAddress","addressCountry":"IN"}}
+</script>
+<style>
+:root{
+  --paper:#f2f0e9; --sheet:#fdfcf8; --ink:#2b3a2a; --ink-soft:#63705f;
+  --sage:#a9bfa6; --sage-pale:#c8d6c4; --stem:#5f7a5c; --iris:#d99b90;
+  --blush-pale:#f0d9d4; --wood:#8b5e3c; --rule:#d8ddd2; --rule-firm:#a8b5a4;
+  --display:"Bodoni Moda",Georgia,serif; --ui:"Jost","Helvetica Neue",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+body{margin:0;min-height:100dvh;background:var(--paper);color:var(--ink);font-family:var(--ui);-webkit-font-smoothing:antialiased;display:flex;flex-direction:column}
+img{display:block;width:100%}
+button,input{font:inherit;color:inherit}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--iris);outline-offset:3px}
+
+.shell{flex:1;display:grid;grid-template-columns:1.1fr 1fr;min-height:100dvh}
+
+/* left: specimen plate */
+.plate{position:relative;background:var(--sage-pale);overflow:hidden}
+.plate img{height:100%;object-fit:cover;filter:saturate(.94);animation:drift 26s ease-in-out infinite alternate}
+@keyframes drift{from{transform:scale(1.02)}to{transform:scale(1.09)}}
+.plate figcaption{position:absolute;left:0;bottom:0;right:0;padding:22px 26px;
+  background:linear-gradient(to top,rgba(43,58,42,.78),transparent);
+  color:var(--paper);font-size:11px;letter-spacing:.2em}
+
+/* right: label card */
+.label{position:relative;display:flex;flex-direction:column;justify-content:center;padding:clamp(30px,5vw,80px)}
+.bloom{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.5}
+.bloom svg{width:100%;height:100%}
+.label > *{position:relative;z-index:1}
+.mark{font-family:var(--display);font-size:clamp(15px,1.5vw,18px);letter-spacing:.36em;text-transform:uppercase;margin-bottom:auto;padding-bottom:40px}
+.status{display:inline-flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.18em;color:var(--stem);margin-bottom:20px}
+.status .pip{width:7px;height:7px;border-radius:50%;background:var(--stem);animation:pulse 2.4s ease-in-out infinite}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(36px,4.6vw,60px);line-height:1.03;margin:0 0 20px}
+.lede{font-size:14.5px;line-height:1.75;color:var(--ink-soft);max-width:40ch;margin:0 0 14px}
+.when{font-size:13px;color:var(--ink);border-left:2px solid var(--iris);padding-left:13px;margin:0 0 30px;line-height:1.6}
+
+/* signup */
+form{max-width:430px}
+.field{display:grid;grid-template-columns:1fr auto;gap:8px}
+.field input{height:48px;border:1px solid var(--rule-firm);background:var(--sheet);padding:0 14px;font-size:14px;min-width:0}
+.field input::placeholder{color:#98a49b}
+.field button{border:1px solid var(--ink);background:var(--ink);color:var(--sheet);padding:0 22px;font-size:12px;letter-spacing:.1em;font-weight:500;transition:background .2s}
+.field button:hover{background:var(--stem);border-color:var(--stem)}
+.field button:disabled{opacity:.5;cursor:not-allowed}
+.smallprint{font-size:11.5px;color:var(--ink-soft);margin:10px 0 0;line-height:1.6}
+.said{font-size:13px;color:var(--stem);margin:12px 0 0;min-height:19px}
+.said.bad{color:#a0522d}
+
+.or{display:flex;align-items:center;gap:12px;margin:26px 0;color:var(--ink-soft);font-size:11px;letter-spacing:.14em;max-width:430px}
+.or::before,.or::after{content:"";flex:1;height:1px;background:var(--rule)}
+.wa{display:inline-flex;align-items:center;justify-content:center;gap:9px;border:1px solid var(--ink);background:transparent;padding:13px 22px;font-size:12px;letter-spacing:.1em;font-weight:500;text-decoration:none;transition:background .2s,color .2s}
+.wa:hover{background:var(--ink);color:var(--sheet)}
+
+.foot{margin-top:auto;padding-top:44px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;
+  border-top:1px solid var(--rule);font-size:11.5px;color:var(--ink-soft)}
+.foot nav{display:flex;gap:16px}
+.foot a{text-decoration:none}
+.foot a:hover{color:var(--ink)}
+
+@media(max-width:880px){
+  .shell{grid-template-columns:1fr;min-height:auto}
+  .plate{height:46vh;min-height:280px}
+  .plate img{height:100%}
+  .label{padding:32px 22px 40px}
+  .mark{margin-bottom:26px;padding-bottom:0}
+  .foot{padding-top:32px}
+}
+@media(max-width:480px){
+  .field{grid-template-columns:1fr}
+  .field button{height:48px}
+}
+</style>
+</head>
+<body>
+
+<div class="shell">
+
+  <figure class="plate">
+    <img src="https://images.unsplash.com/photo-1610189028606-5459e43b4c2c?auto=format&fit=crop&w=1200&q=85"
+         alt="A piece from the first House of Flora collection"/>
+    <figcaption>SPECIMEN 001 — FIRST COLLECTION</figcaption>
+  </figure>
+
+  <main class="label">
+    <div class="bloom" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 600 600">
+        <defs>
+          <g id="blossom">
+            <circle r="7.5" cx="0" cy="-9" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="8.6" cy="-2.8" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="5.3" cy="7.3" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="-5.3" cy="7.3" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="-8.6" cy="-2.8" fill="var(--blush-pale)"/>
+            <circle r="3" cx="0" cy="0" fill="var(--iris)"/>
+          </g>
+          <g id="leaf"><path d="M0 0 C7 -5 15 -3 17 3 C11 8 3 7 0 0 Z" fill="var(--sage)" opacity=".7"/></g>
+          <pattern id="wallpaper" width="200" height="200" patternUnits="userSpaceOnUse">
+            <path d="M-10 40 C40 20 90 55 140 30 C170 15 190 25 210 18" fill="none" stroke="var(--stem)" stroke-width="1.1" opacity=".42"/>
+            <use href="#blossom" x="42" y="31"/><use href="#blossom" x="118" y="41"/>
+            <use href="#leaf" x="70" y="34" transform="rotate(14 70 34)"/>
+            <path d="M-10 130 C30 150 60 110 105 128 C150 146 175 118 210 132" fill="none" stroke="var(--stem)" stroke-width="1.1" opacity=".42"/>
+            <use href="#blossom" x="22" y="142"/><use href="#blossom" x="105" y="128"/><use href="#blossom" x="182" y="124"/>
+            <use href="#leaf" x="140" y="138" transform="rotate(8 140 138)"/>
+            <path d="M150 30 C146 60 158 90 152 128" fill="none" stroke="var(--stem)" stroke-width=".9" opacity=".28"/>
+            <use href="#blossom" x="152" y="78"/>
+          </pattern>
+        </defs>
+        <rect width="600" height="600" fill="url(#wallpaper)"/>
+      </svg>
+    </div>
+    <div class="mark">House of Flora</div>
+
+    <div class="status"><span class="pip" aria-hidden="true"></span>OPENING SOON</div>
+
+    <h1>We are still<br/>pressing the<br/>first pages</h1>
+
+    <p class="lede">House of Flora makes contemporary Indian womenswear in small runs. Everything is cut, printed and finished in one workroom, thirty pieces at a time.</p>
+
+    <p class="when" id="whenLine">The first collection opens in <b>October 2026</b>.</p>
+
+    <form id="joinForm" novalidate>
+      <div class="field">
+        <label for="email" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Email address</label>
+        <input id="email" type="email" name="email" placeholder="your@email.com" autocomplete="email" required/>
+        <button type="submit" id="joinBtn">Join the list</button>
+      </div>
+      <p class="smallprint">We will write once when the collection opens, and rarely after that. No forwarding, no selling, unsubscribe whenever.</p>
+      <p class="said" id="said" role="status" aria-live="polite"></p>
+    </form>
+
+    <div class="or">OR</div>
+
+    <a class="wa" id="waLink" target="_blank" rel="noopener">Message us on WhatsApp</a>
+
+    <div class="foot">
+      <span>© 2026 House of Flora · Made in India</span>
+      <nav>
+        <a href="#" id="igLink">Instagram</a>
+        <a id="waFoot" target="_blank" rel="noopener">WhatsApp</a>
+      </nav>
+    </div>
+  </main>
+
+</div>
+
+<script>
+/* ═══════════════════════════════════════════════════
+   House of Flora — holding page
+   Set the four values below and deploy.
+   ═══════════════════════════════════════════════════ */
+const CONFIG = {
+  whatsapp:  "919000000000",        // ← real number, no + and no spaces
+  instagram: "https://instagram.com/",  // ← real profile URL
+  opening:   "October 2026",        // ← or "soon" if the date is not fixed
+
+  // Where signups go. Leave blank and the form falls back to WhatsApp,
+  // which still works — it just means you collect them by hand.
+  // Free options that need no backend: Formspree, Google Forms, Brevo.
+  signupEndpoint: ""                // e.g. "https://formspree.io/f/xxxxxxx"
+};
+
+const $ = s => document.querySelector(s);
+const wa = text => `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+
+/* If the hero photo fails to load, fall back to a branded sage panel
+   rather than showing a broken-image icon on the landing page. */
+document.addEventListener("error", e => {
+  const img = e.target;
+  if (!(img instanceof HTMLImageElement) || img.dataset.fallbackApplied) return;
+  img.dataset.fallbackApplied = "1";
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1200">
+    <rect width="900" height="1200" fill="#c8d6c4"/>
+    <g transform="translate(450 560)" opacity=".6">
+      <circle cx="0" cy="-40" r="20" fill="#fdfcf8"/><circle cx="38" cy="-13" r="20" fill="#fdfcf8"/>
+      <circle cx="23" cy="32" r="20" fill="#fdfcf8"/><circle cx="-23" cy="32" r="20" fill="#fdfcf8"/>
+      <circle cx="-38" cy="-13" r="20" fill="#fdfcf8"/><circle cx="0" cy="0" r="12" fill="#d99b90"/>
+    </g>
+    <text x="450" y="680" text-anchor="middle" font-family="Georgia,serif"
+          font-size="34" letter-spacing="8" fill="#5f7a5c">HOUSE OF FLORA</text>
+  </svg>`;
+  img.src = "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+}, true);
+
+/* apply config */
+$("#whenLine").innerHTML = `The first collection opens in <b>${CONFIG.opening}</b>.`;
+$("#waLink").href = wa("Hello House of Flora, please let me know when the collection opens.");
+$("#waFoot").href = wa("Hello House of Flora, I have a question.");
+$("#igLink").href = CONFIG.instagram;
+
+/* signup */
+const form = $("#joinForm"), said = $("#said"), btn = $("#joinBtn");
+
+function say(msg, bad){
+  said.textContent = msg;
+  said.classList.toggle("bad", !!bad);
+}
+
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const email = $("#email").value.trim();
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){
+    say("That email does not look right. Check it and try again.", true);
+    return;
+  }
+
+  // Remember locally so a repeat visitor is not asked twice
+  const seen = JSON.parse(localStorage.getItem("hof_joined") || "[]");
+
+  if (!CONFIG.signupEndpoint){
+    // No form service configured — hand off to WhatsApp so the lead is not lost
+    window.open(wa(`Hello House of Flora, please add me to the list. My email is ${email}`), "_blank");
+    say("Opening WhatsApp so we can add you to the list.");
+    return;
+  }
+
+  btn.disabled = true;
+  say("One moment…");
+
+  try {
+    const res = await fetch(CONFIG.signupEndpoint, {
+      method: "POST",
+      headers: { "Content-Type": "application/json", "Accept": "application/json" },
+      body: JSON.stringify({ email, source: "holding-page" })
+    });
+    if (!res.ok) throw new Error();
+
+    if (!seen.includes(email)){
+      seen.push(email);
+      localStorage.setItem("hof_joined", JSON.stringify(seen));
+    }
+    form.querySelector(".field").style.display = "none";
+    say("You are on the list. We will write when the collection opens.");
+  } catch {
+    say("That did not go through. Message us on WhatsApp instead and we will add you.", true);
+    btn.disabled = false;
+  }
+});
+
+/* returning visitor who already signed up */
+if ((JSON.parse(localStorage.getItem("hof_joined") || "[]")).length){
+  say("You are already on the list.");
+}
+</script>
+</body>
+</html>
