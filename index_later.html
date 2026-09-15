@@ -1,0 +1,2033 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<meta name="theme-color" content="#2b3a2a"/>
+<title>House of Flora — Contemporary Indian Womenswear</title>
+<meta name="description" content="House of Flora makes contemporary Indian womenswear in small runs. Hand-finished kurta sets, sarees, co-ords and occasion pieces, catalogued like a herbarium."/>
+<meta property="og:title" content="House of Flora"/>
+<meta property="og:description" content="Contemporary Indian womenswear, made in small runs."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?auto=format&fit=crop&w=1200&q=85"/>
+<meta property="og:site_name" content="House of Flora"/>
+<meta name="twitter:card" content="summary_large_image"/>
+<link rel="canonical" href="https://houseofflora.com/"/>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23a9bfa6'/%3E%3Cg fill='%23fdfcf8'%3E%3Ccircle cx='16' cy='9' r='4.2'/%3E%3Ccircle cx='22.6' cy='13.8' r='4.2'/%3E%3Ccircle cx='20.1' cy='21.6' r='4.2'/%3E%3Ccircle cx='11.9' cy='21.6' r='4.2'/%3E%3Ccircle cx='9.4' cy='13.8' r='4.2'/%3E%3C/g%3E%3Ccircle cx='16' cy='16' r='2.6' fill='%23d99b90'/%3E%3C/svg%3E"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"House of Flora",
+  "description":"Contemporary Indian womenswear, cut and finished in small runs.",
+  "url":"https://houseofflora.com/",
+  "address":{"@type":"PostalAddress","addressCountry":"IN"}
+}
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+<style>
+:root{
+  /* Palette taken from the physical store:
+     sage cabinetry, teak fixtures, cream tile, blossom-pink accents */
+  --paper:#f2f0e9;      /* cream tile / wall, page ground */
+  --sheet:#fdfcf8;      /* white wall, cards */
+  --sage:#a9bfa6;       /* the store's pastel green — the brand colour */
+  --sage-pale:#c8d6c4;  /* lighter sage, fills and rules */
+  --sage-deep:#5f7a5c;  /* deep sage, secondary surfaces */
+  --ink:#2b3a2a;        /* near-black green, text */
+  --ink-soft:#63705f;   /* secondary text */
+  --wood:#8b5e3c;       /* teak fixtures */
+  --blush:#d99b90;      /* blossom / balloon pink — the accent */
+  --blush-pale:#f0d9d4;
+  --rule:#d8ddd2;       /* hairlines */
+  --rule-firm:#a8b5a4;
+  --display:"Bodoni Moda",Georgia,serif;
+  --ui:"Jost","Helvetica Neue",Arial,sans-serif;
+  --arch:180px 180px 0 0;  /* the arched niche motif */
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition-duration:.01ms!important;animation-duration:.01ms!important}}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);font-weight:400;-webkit-font-smoothing:antialiased}
+img{display:block;width:100%}
+button,input,select{font:inherit;color:inherit}
+button,a{cursor:pointer}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:2px solid var(--blush);outline-offset:3px}
+.wrap{padding-inline:clamp(18px,5vw,84px)}
+
+/* ─── nameplate / header ─────────────────────────────── */
+.masthead{position:sticky;top:0;z-index:60;background:var(--paper);border-bottom:1px solid var(--rule)}
+.masthead-in{height:72px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:20px}
+.menu-btn{display:none;border:0;background:transparent;padding:8px;font-size:19px;line-height:1}
+.wordmark{font-family:var(--display);font-size:15px;letter-spacing:.34em;text-transform:uppercase;text-align:center;white-space:nowrap}
+.wordmark b{font-weight:400}
+.wordmark{color:var(--ink)}
+.mainnav{display:flex;gap:26px;font-size:13px;font-weight:400}
+.mainnav a{padding:6px 0;border-bottom:1px solid transparent;transition:border-color .2s}
+.mainnav a:hover{border-color:var(--ink)}
+.tools{display:flex;align-items:center;justify-content:flex-end;gap:4px}
+.tool{border:0;background:transparent;padding:9px 10px;font-size:13px;position:relative}
+.tool .tally{position:absolute;top:1px;right:0;min-width:17px;height:17px;border-radius:9px;background:var(--blush);color:#fff;font-size:10px;font-weight:500;display:grid;place-items:center;padding:0 4px}
+.tool .tally[data-zero="1"]{display:none}
+
+/* ─── drop menu (mobile) ─────────────────────────────── */
+.dropnav{display:none;border-bottom:1px solid var(--rule);background:var(--paper)}
+.dropnav.open{display:block}
+.dropnav a,.dropnav button{display:block;width:100%;text-align:left;padding:14px 0;border:0;border-bottom:1px solid var(--rule);background:transparent;font-size:14px}
+.dropnav :last-child{border-bottom:0}
+
+/* ─── hero: arched specimen + blossom field ──────────── */
+.plate{position:relative;display:grid;grid-template-columns:1.55fr 1fr;gap:0;align-items:end;
+  padding-block:clamp(28px,5vw,64px) clamp(48px,7vw,96px);overflow:hidden}
+/* blossom wallpaper layer, echoing the panel behind the store counter */
+.bloom{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.55}
+.bloom svg{width:100%;height:100%}
+.plate > *{position:relative;z-index:1}
+.plate-img{position:relative;background:var(--sage-deep);border-radius:var(--arch);overflow:hidden;
+  border:1px solid var(--rule-firm)}
+.plate-img img{aspect-ratio:4/5;object-fit:cover;filter:saturate(.94)}
+.plate-card{background:var(--sheet);border:1px solid var(--rule-firm);padding:clamp(26px,3vw,42px);
+  margin-left:-15%;margin-bottom:8%;position:relative;z-index:2;
+  box-shadow:0 24px 60px rgba(43,58,42,.14)}
+/* fluted ribbing, taken from the store counter */
+.plate-card::before{content:"";position:absolute;left:0;right:0;bottom:0;height:9px;
+  background:repeating-linear-gradient(90deg,var(--sage) 0 3px,var(--sage-pale) 3px 6px)}
+.plate-card .season{font-size:11px;letter-spacing:.2em;color:var(--sage-deep)}
+.plate-card h1{font-family:var(--display);font-weight:400;font-size:clamp(38px,4.6vw,62px);line-height:1.02;margin:14px 0 16px}
+.plate-card p{font-size:14px;line-height:1.7;color:var(--ink-soft);max-width:38ch;margin:0 0 26px}
+.plate-acts{display:flex;gap:10px;flex-wrap:wrap}
+
+/* ─── buttons ────────────────────────────────────────── */
+.btn{border:1px solid var(--ink);background:transparent;padding:13px 22px;font-size:12px;letter-spacing:.1em;font-weight:500;display:inline-flex;align-items:center;justify-content:center;transition:background .2s,color .2s}
+.btn:hover{background:var(--ink);color:var(--sheet)}
+.btn.solid{background:var(--ink);color:var(--sheet)}
+.btn.solid:hover{background:var(--sage-deep);border-color:var(--sage-deep)}
+.btn.iris{background:var(--blush);border-color:var(--blush);color:#fff}
+.btn.iris:hover{background:#c98a7f;border-color:#c98a7f}
+.btn.block{width:100%}
+.btn:disabled{opacity:.4;cursor:not-allowed}
+.quiet{border:0;background:transparent;font-size:12px;text-decoration:underline;text-underline-offset:3px;padding:6px 2px;color:var(--ink-soft)}
+.quiet:hover{color:var(--ink)}
+
+/* ─── section frame ──────────────────────────────────── */
+.band{padding-block:clamp(52px,6vw,86px);border-top:1px solid var(--rule)}
+.band-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:30px}
+.band-head h2{font-family:var(--display);font-weight:400;font-size:clamp(27px,3.2vw,42px);line-height:1.08;margin:0}
+.band-head .note{font-size:13px;color:var(--ink-soft);max-width:44ch;margin:8px 0 0;line-height:1.65}
+
+/* ─── collection rail ────────────────────────────────── */
+.rail{display:grid;grid-template-columns:repeat(5,1fr);gap:16px}
+.rail button{border:0;background:transparent;padding:0;text-align:left}
+.rail img{aspect-ratio:3/4;object-fit:cover;filter:saturate(.92);border-radius:120px 120px 0 0;border:1px solid var(--rule)}
+.rail h3{font-family:var(--display);font-weight:400;font-size:17px;margin:12px 0 3px}
+.rail p{font-size:12px;color:var(--ink-soft);margin:0}
+
+/* ─── catalogue controls ─────────────────────────────── */
+.controls{display:grid;grid-template-columns:minmax(200px,1fr) auto;gap:12px;margin-bottom:16px}
+.searchfield{position:relative}
+.searchfield input{width:100%;height:46px;background:var(--sheet);border:1px solid var(--rule-firm);padding:0 40px 0 14px;font-size:14px}
+.searchfield input::placeholder{color:#98a49b}
+.searchfield span{position:absolute;right:13px;top:50%;transform:translateY(-50%);color:var(--ink-soft);font-size:15px}
+.sortfield{height:46px;background:var(--sheet);border:1px solid var(--rule-firm);padding:0 12px;font-size:13px}
+.catbar{display:flex;gap:7px;flex-wrap:wrap;margin-bottom:16px}
+.catpill{border:1px solid var(--rule-firm);background:var(--sheet);padding:9px 15px;font-size:12px;letter-spacing:.04em;white-space:nowrap}
+.catpill.on{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.drawer-open-btn{display:none;width:100%;border:1px solid var(--ink);background:var(--sheet);padding:13px;font-size:12px;letter-spacing:.1em;margin-bottom:14px}
+
+/* ─── filter panels ──────────────────────────────────── */
+.panels{display:grid;grid-template-columns:1.2fr 1fr 1.1fr;gap:12px;margin-bottom:18px}
+.panel{background:var(--sheet);border:1px solid var(--rule);padding:15px 16px 17px}
+.panel-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:12px}
+.panel-top b{font-size:12px;font-weight:600;letter-spacing:.06em}
+.panel-top span{font-size:11px;color:var(--ink-soft)}
+.slider{position:relative;height:32px;margin:4px 2px 6px}
+.slider-track{position:absolute;inset-inline:0;top:14px;height:3px;background:var(--rule)}
+.slider-fill{position:absolute;top:14px;height:3px;background:var(--blush)}
+.slider input[type=range]{position:absolute;left:0;top:4px;width:100%;margin:0;background:transparent;pointer-events:none;-webkit-appearance:none;appearance:none}
+.slider input[type=range]::-webkit-slider-runnable-track{height:3px;background:transparent}
+.slider input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;appearance:none;width:17px;height:17px;border-radius:50%;background:var(--sheet);border:1.5px solid var(--ink);pointer-events:auto;cursor:grab;margin-top:-7px}
+.slider input[type=range]::-moz-range-track{height:3px;background:transparent}
+.slider input[type=range]::-moz-range-thumb{width:17px;height:17px;border-radius:50%;background:var(--sheet);border:1.5px solid var(--ink);pointer-events:auto;cursor:grab}
+.slider-ends{display:flex;justify-content:space-between;font-size:11px;color:var(--ink-soft)}
+.opts{display:flex;gap:6px;flex-wrap:wrap}
+.opt{border:1px solid var(--rule-firm);background:var(--sheet);min-width:38px;height:34px;padding:0 11px;font-size:12px}
+.opt.on{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+.opt.colour{display:inline-flex;align-items:center;gap:7px}
+.dot{width:13px;height:13px;border-radius:50%;border:1px solid rgba(0,0,0,.25)}
+
+/* ─── result meta + active chips ─────────────────────── */
+.resultbar{display:flex;justify-content:space-between;align-items:center;gap:14px;font-size:12px;color:var(--ink-soft);margin-bottom:12px}
+.chipstrip{display:flex;align-items:center;gap:7px;flex-wrap:wrap;margin-bottom:18px}
+.chipstrip[hidden]{display:none}
+.chipstrip .lede{font-size:11px;color:var(--ink-soft)}
+.chip{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--rule-firm);background:var(--sheet);padding:7px 9px 7px 12px;font-size:12px;line-height:1;border-radius:999px;transition:border-color .18s}
+.chip:hover{border-color:var(--ink)}
+.chip .x{font-size:13px;color:var(--ink-soft)}
+.chip:hover .x{color:var(--ink)}
+.chip-clear{border:0;background:transparent;font-size:11px;text-decoration:underline;text-underline-offset:3px;color:var(--blush);padding:6px}
+
+/* ─── specimen grid ──────────────────────────────────── */
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.grid.snug{grid-template-columns:repeat(3,1fr)}
+.spec{background:var(--sheet);border:1px solid var(--rule);display:flex;flex-direction:column;text-align:left;padding:0;transition:border-color .2s,box-shadow .2s}
+.spec:hover{border-color:var(--rule-firm);box-shadow:0 14px 34px rgba(28,43,34,.09)}
+.spec-img{position:relative;overflow:hidden;background:#dfe3dd}
+.spec-img img{aspect-ratio:3/4;object-fit:cover}
+.spec-img .alt{position:absolute;inset:0;opacity:0;transition:opacity .35s}
+.spec:hover .spec-img .alt{opacity:1}
+.spec-flag{position:absolute;top:10px;left:10px;background:var(--sheet);border:1px solid var(--rule-firm);font-size:10px;letter-spacing:.1em;padding:4px 8px}
+.spec-fav{position:absolute;top:8px;right:8px;width:32px;height:32px;border:1px solid var(--rule-firm);background:rgba(252,252,250,.9);border-radius:50%;display:grid;place-items:center;font-size:13px;z-index:2}
+.spec-fav.on{background:var(--blush);border-color:var(--blush);color:#fff}
+.spec-label{border-top:1px solid var(--rule);padding:13px 14px 15px;display:flex;flex-direction:column;gap:5px;flex:1}
+.spec-sku{font-size:10px;letter-spacing:.16em;color:var(--ink-soft)}
+.spec-name{font-family:var(--display);font-weight:400;font-size:17px;line-height:1.25;margin:0}
+.spec-meta{font-size:11.5px;color:var(--ink-soft);margin:0}
+.spec-price{margin-top:auto;padding-top:9px;display:flex;align-items:baseline;gap:8px;font-size:14px}
+.spec-price del{color:var(--ink-soft);font-size:12px}
+.spec-price .off{color:var(--blush);font-size:11px}
+.empty{grid-column:1/-1;background:var(--sheet);border:1px dashed var(--rule-firm);padding:48px 24px;text-align:center}
+.empty h3{font-family:var(--display);font-weight:400;font-size:21px;margin:0 0 8px}
+.empty p{font-size:13px;color:var(--ink-soft);margin:0 0 18px}
+.more{display:flex;flex-direction:column;align-items:center;gap:9px;margin-top:30px}
+.more[hidden]{display:none}
+.more .tally{font-size:11.5px;color:var(--ink-soft)}
+.sentinel{height:1px;width:100%}
+
+/* ─── editorial band ─────────────────────────────────── */
+.field{background:var(--sage-deep);color:#f2f0e9;padding-block:clamp(56px,7vw,96px)}
+.field-in{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,72px);align-items:center}
+.field h2{font-family:var(--display);font-weight:400;font-size:clamp(28px,3.6vw,46px);line-height:1.1;margin:0 0 18px}
+.field p{font-size:14.5px;line-height:1.75;color:#dce5d9;max-width:52ch;margin:0 0 26px}
+.field .btn{border-color:var(--paper);color:var(--paper)}
+.field .btn:hover{background:var(--paper);color:var(--ink)}
+.field img{aspect-ratio:5/4;object-fit:cover;border-radius:140px 140px 0 0}
+
+/* ─── ledger (why us) ────────────────────────────────── */
+.ledger{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--rule)}
+.ledger div{padding:26px 20px 28px;border-right:1px solid var(--rule)}
+.ledger div:last-child{border-right:0}
+.ledger b{display:block;font-family:var(--display);font-weight:400;font-size:18px;margin-bottom:7px}
+.ledger span{font-size:12.5px;color:var(--ink-soft);line-height:1.6}
+
+/* ─── footer ─────────────────────────────────────────── */
+footer{background:var(--ink);color:#eef1ea;padding-block:clamp(46px,5vw,68px) 26px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr 1fr;gap:32px}
+.foot-grid h4{font-family:var(--display);font-weight:400;font-size:15px;letter-spacing:.28em;text-transform:uppercase;margin:0 0 14px}
+.foot-grid b{display:block;font-size:12px;font-weight:600;letter-spacing:.08em;margin-bottom:12px}
+.foot-grid a,.foot-grid p{display:block;font-size:13px;color:#c5cfc2;margin:0 0 9px;line-height:1.6}
+.foot-grid a:hover{color:var(--paper)}
+.foot-rule{border-top:1px solid #45564181;margin-top:36px;padding-top:18px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:11.5px;color:#94a391}
+
+/* ─── overlays ───────────────────────────────────────── */
+.veil{position:fixed;inset:0;background:rgba(43,58,42,.48);opacity:0;pointer-events:none;transition:opacity .3s;z-index:90}
+.veil.on{opacity:1;pointer-events:auto}
+.slideover{position:fixed;top:0;right:0;height:100dvh;width:min(420px,92vw);background:var(--paper);z-index:100;transform:translateX(101%);transition:transform .34s cubic-bezier(.4,0,.2,1);display:flex;flex-direction:column}
+.slideover.on{transform:none}
+.slideover.left{right:auto;left:0;transform:translateX(-101%)}
+.slideover.left.on{transform:none}
+.so-top{display:flex;justify-content:space-between;align-items:center;padding:20px 22px;border-bottom:1px solid var(--rule)}
+.so-top h3{font-family:var(--display);font-weight:400;font-size:20px;margin:0}
+.so-top button{border:0;background:transparent;font-size:20px;line-height:1;padding:4px 6px}
+.so-body{flex:1;overflow-y:auto;padding:18px 22px}
+.so-foot{border-top:1px solid var(--rule);padding:18px 22px;background:var(--sheet)}
+
+.line{display:grid;grid-template-columns:74px 1fr auto;gap:13px;padding:14px 0;border-bottom:1px solid var(--rule)}
+.line img{aspect-ratio:3/4;object-fit:cover}
+.line h4{font-family:var(--display);font-weight:400;font-size:15px;margin:0 0 4px}
+.line .attrs{font-size:11.5px;color:var(--ink-soft);margin:0 0 9px}
+.qty{display:inline-flex;border:1px solid var(--rule-firm);background:var(--sheet)}
+.qty button{border:0;background:transparent;width:28px;height:28px;font-size:14px}
+.qty span{min-width:30px;display:grid;place-items:center;font-size:12.5px;border-inline:1px solid var(--rule-firm)}
+.line .right{text-align:right;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-end}
+.line .right b{font-size:13.5px;font-weight:500}
+.blank{text-align:center;padding:52px 10px;color:var(--ink-soft)}
+.blank p{font-size:13.5px;margin:0 0 18px;line-height:1.6}
+
+.coupon{display:grid;grid-template-columns:1fr auto;gap:8px;margin-bottom:14px}
+.coupon input{border:1px solid var(--rule-firm);background:var(--sheet);height:42px;padding:0 12px;font-size:13px}
+.coupon button{border:1px solid var(--ink);background:transparent;padding:0 16px;font-size:12px;letter-spacing:.08em}
+.sums{font-size:13px;margin-bottom:14px}
+.sums div{display:flex;justify-content:space-between;padding:6px 0}
+.sums .grand{border-top:1px solid var(--rule);margin-top:6px;padding-top:11px;font-size:16px;font-weight:500}
+.sums .save{color:var(--blush)}
+
+/* ─── product modal ──────────────────────────────────── */
+.sheetmodal{position:fixed;inset:0;z-index:110;display:none;align-items:center;justify-content:center;padding:20px}
+.sheetmodal.on{display:flex}
+.sheetmodal-in{background:var(--paper);width:min(1000px,100%);max-height:92dvh;overflow-y:auto;display:grid;grid-template-columns:1fr 1fr;position:relative;border:1px solid var(--rule-firm)}
+.sheetmodal-x{position:absolute;top:12px;right:12px;z-index:3;width:36px;height:36px;border:1px solid var(--rule-firm);background:var(--sheet);font-size:17px;line-height:1}
+.gal{position:relative;background:#dfe3dd}
+.gal-main{aspect-ratio:3/4;object-fit:cover}
+.gal-arrow{position:absolute;top:50%;transform:translateY(-50%);width:38px;height:38px;border:1px solid var(--rule-firm);background:rgba(252,252,250,.92);font-size:17px;line-height:1}
+.gal-arrow.prev{left:10px}.gal-arrow.next{right:10px}
+.gal-dots{display:flex;gap:6px;justify-content:center;padding:11px}
+.gal-dots button{width:7px;height:7px;padding:0;border-radius:50%;border:1px solid var(--ink-soft);background:transparent}
+.gal-dots button.on{background:var(--ink);border-color:var(--ink)}
+.detail{padding:clamp(24px,3vw,36px)}
+.detail .sku{font-size:10px;letter-spacing:.16em;color:var(--ink-soft)}
+.detail h2{font-family:var(--display);font-weight:400;font-size:clamp(25px,3vw,34px);line-height:1.1;margin:9px 0 8px}
+.detail .sub{font-size:13.5px;color:var(--ink-soft);line-height:1.65;margin:0 0 16px}
+.detail .cost{display:flex;align-items:baseline;gap:10px;margin-bottom:20px;padding-bottom:18px;border-bottom:1px solid var(--rule)}
+.detail .cost strong{font-size:22px;font-weight:500}
+.detail .cost del{color:var(--ink-soft);font-size:14px}
+.detail .cost .off{color:var(--blush);font-size:12px}
+.pick{margin-bottom:18px}
+.pick-top{display:flex;justify-content:space-between;align-items:baseline;margin-bottom:9px}
+.pick-top b{font-size:12px;font-weight:600;letter-spacing:.05em}
+.pick-top span,.pick-top a{font-size:11.5px;color:var(--ink-soft)}
+.swatch{width:32px;height:32px;border-radius:50%;border:1px solid var(--rule-firm);padding:0;position:relative}
+.swatch.on{box-shadow:0 0 0 1.5px var(--paper) inset,0 0 0 2px var(--ink)}
+.detail .body{font-size:13.5px;line-height:1.75;color:var(--ink-soft);margin:18px 0 0;padding-top:16px;border-top:1px solid var(--rule)}
+.detail .body dl{display:grid;grid-template-columns:auto 1fr;gap:5px 14px;margin:12px 0 0;font-size:12.5px}
+.detail .body dt{color:var(--ink)}
+.stockline{font-size:12px;color:var(--sage-deep);margin:0 0 16px}
+.stockline.low{color:#a0522d}
+
+/* ─── checkout form ──────────────────────────────────── */
+.form-row{display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:11px}
+.form-row.one{grid-template-columns:1fr}
+label.field-l{display:block;font-size:11.5px;color:var(--ink-soft);margin-bottom:5px}
+.form-row input,.form-row select,.form-row textarea{width:100%;border:1px solid var(--rule-firm);background:var(--sheet);height:42px;padding:0 11px;font-size:13.5px}
+.form-row textarea{height:72px;padding:10px 11px;resize:vertical}
+.paynote{background:var(--sheet);border:1px solid var(--rule);padding:13px 14px;font-size:12px;color:var(--ink-soft);line-height:1.6;margin-bottom:14px}
+
+/* ─── info modal (size guide, policies) ──────────────── */
+.prose{padding:clamp(26px,3vw,40px)}
+.prose h2{font-family:var(--display);font-weight:400;font-size:clamp(24px,3vw,32px);margin:0 0 6px}
+.prose .kicker{font-size:11px;letter-spacing:.18em;color:var(--ink-soft);margin-bottom:18px}
+.prose h3{font-family:var(--display);font-weight:400;font-size:18px;margin:24px 0 8px}
+.prose p,.prose li{font-size:13.5px;line-height:1.75;color:var(--ink-soft)}
+.prose p{margin:0 0 12px}
+.prose ul{margin:0 0 12px;padding-left:18px}
+.prose li{margin-bottom:6px}
+.sizetable{width:100%;border-collapse:collapse;margin:12px 0 6px;font-size:12.5px}
+.sizetable th,.sizetable td{border:1px solid var(--rule);padding:8px 10px;text-align:left}
+.sizetable th{background:var(--sheet);font-weight:600;font-size:11.5px;letter-spacing:.04em}
+.sizetable td{color:var(--ink-soft)}
+.sizetable tbody tr:nth-child(odd) td{background:rgba(252,252,250,.6)}
+.measure{background:var(--sheet);border:1px solid var(--rule);padding:14px 16px;margin:14px 0}
+.measure b{display:block;font-size:12px;margin-bottom:8px}
+.tabstrip{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px}
+.tabstrip button{border:1px solid var(--rule-firm);background:var(--sheet);padding:8px 13px;font-size:12px}
+.tabstrip button.on{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+
+/* ─── free shipping nudge ────────────────────────────── */
+.nudge{background:var(--sheet);border:1px solid var(--rule);padding:11px 13px;margin-bottom:13px;font-size:12px;color:var(--ink-soft);line-height:1.5}
+.nudge b{color:var(--ink);font-weight:500}
+.nudge .bar{height:3px;background:var(--rule);margin-top:9px;position:relative}
+.nudge .bar i{position:absolute;inset-block:0;left:0;background:var(--blush);display:block}
+.recap{background:var(--sheet);border:1px solid var(--rule);padding:13px 15px;margin-bottom:16px;font-size:12.5px}
+.recap div{display:flex;justify-content:space-between;gap:12px;padding:4px 0;color:var(--ink-soft)}
+.recap .tot{border-top:1px solid var(--rule);margin-top:7px;padding-top:9px;color:var(--ink);font-weight:500;font-size:14px}
+
+/* ─── toast ──────────────────────────────────────────── */
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,18px);background:var(--ink);color:var(--paper);padding:13px 20px;font-size:13px;z-index:200;opacity:0;pointer-events:none;transition:.28s}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+
+/* ─── responsive ─────────────────────────────────────── */
+@media(max-width:1080px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+  .rail{grid-template-columns:repeat(3,1fr)}
+  .ledger{grid-template-columns:repeat(2,1fr)}
+  .ledger div:nth-child(2){border-right:0}
+  .ledger div:nth-child(-n+2){border-bottom:1px solid var(--rule)}
+}
+@media(max-width:860px){
+  .menu-btn{display:block}
+  .mainnav{display:none}
+  .masthead-in{grid-template-columns:auto 1fr auto;height:62px}
+  .wordmark{font-size:13px;letter-spacing:.26em}
+  .plate{grid-template-columns:1fr;padding-bottom:40px}
+  .plate-img{border-radius:130px 130px 0 0}
+  .bloom{opacity:.42}
+  .plate-card{margin:-46px 14px 0;box-shadow:0 16px 40px rgba(43,58,42,.16)}
+  .rail img{border-radius:80px 80px 0 0}
+  .field img{border-radius:100px 100px 0 0}
+  .panels{display:none}
+  .drawer-open-btn{display:block}
+  .controls{grid-template-columns:1fr}
+  .sortfield{display:none}
+  .field-in{grid-template-columns:1fr}
+  .field .shot{order:-1}
+  .sheetmodal{padding:0}
+  .sheetmodal-in{grid-template-columns:1fr;max-height:100dvh;height:100dvh}
+  .foot-grid{grid-template-columns:1fr 1fr}
+  .chipstrip{flex-wrap:nowrap;overflow-x:auto;padding-bottom:5px;-webkit-overflow-scrolling:touch}
+  .chipstrip::-webkit-scrollbar{display:none}
+  .chip,.chip-clear,.chipstrip .lede{flex:0 0 auto}
+}
+@media(max-width:620px){
+  .grid,.grid.snug{grid-template-columns:repeat(2,1fr)}
+  .rail{grid-template-columns:repeat(2,1fr)}
+  .spec-name{font-size:15px}
+  .foot-grid{grid-template-columns:1fr}
+  .form-row{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<noscript>
+  <div style="background:#2b3a2a;color:#e9ece6;padding:16px;text-align:center;font-size:14px">
+    The catalogue needs JavaScript to run. Please enable it, or message us on WhatsApp and we will send you what is available.
+  </div>
+</noscript>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<header class="masthead">
+  <div class="masthead-in wrap">
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+    <nav class="mainnav" id="deskNav">
+      <a href="#shop">Shop</a>
+      <a href="#collections">Collections</a>
+      <a href="#atelier">Atelier</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="wordmark"><b>House of Flora</b></div>
+    <div class="tools">
+      <button class="tool" id="wishBtn" aria-label="Saved pieces">♡<span class="tally" id="wishTally" data-zero="1">0</span></button>
+      <button class="tool" id="bagBtn" aria-label="Shopping bag">Bag<span class="tally" id="bagTally" data-zero="1">0</span></button>
+    </div>
+  </div>
+  <nav class="dropnav wrap" id="dropNav">
+    <a href="#shop">Shop</a>
+    <a href="#collections">Collections</a>
+    <a href="#atelier">Atelier</a>
+    <a href="#contact">Contact</a>
+    <button id="dropWish">Saved pieces</button>
+    <a id="dropWa" target="_blank" rel="noopener">Message us on WhatsApp</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- hero: arched specimen plate + label card, over a blossom field -->
+  <section class="plate wrap">
+
+    <!-- Blossom pattern, echoing the wallpaper panel in the store.
+         Drawn inline so it scales cleanly and inherits brand colours. -->
+    <div class="bloom" aria-hidden="true">
+      <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" viewBox="0 0 600 600">
+        <defs>
+          <g id="blossom">
+            <circle r="7.5" cx="0" cy="-9" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="8.6" cy="-2.8" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="5.3" cy="7.3" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="-5.3" cy="7.3" fill="var(--blush-pale)"/>
+            <circle r="7.5" cx="-8.6" cy="-2.8" fill="var(--blush-pale)"/>
+            <circle r="3" cx="0" cy="0" fill="var(--blush)"/>
+          </g>
+          <g id="bud">
+            <ellipse rx="3.6" ry="5" fill="var(--blush)" opacity=".55"/>
+          </g>
+          <g id="leaf">
+            <path d="M0 0 C7 -5 15 -3 17 3 C11 8 3 7 0 0 Z" fill="var(--sage)" opacity=".7"/>
+          </g>
+
+          <pattern id="wallpaper" width="200" height="200" patternUnits="userSpaceOnUse">
+            <!-- branch 1 -->
+            <path d="M-10 40 C40 20 90 55 140 30 C170 15 190 25 210 18"
+                  fill="none" stroke="var(--sage-deep)" stroke-width="1.1" opacity=".45"/>
+            <use href="#blossom" x="42" y="31"/>
+            <use href="#blossom" x="118" y="41"/>
+            <use href="#leaf" x="70" y="34" transform="rotate(14 70 34)"/>
+            <use href="#bud" x="95" y="40"/>
+            <use href="#bud" x="160" y="22"/>
+
+            <!-- branch 2 -->
+            <path d="M-10 130 C30 150 60 110 105 128 C150 146 175 118 210 132"
+                  fill="none" stroke="var(--sage-deep)" stroke-width="1.1" opacity=".45"/>
+            <use href="#blossom" x="22" y="142"/>
+            <use href="#blossom" x="105" y="128"/>
+            <use href="#blossom" x="182" y="124"/>
+            <use href="#leaf" x="60" y="124" transform="rotate(-24 60 124)"/>
+            <use href="#leaf" x="140" y="138" transform="rotate(8 140 138)"/>
+            <use href="#bud" x="78" y="118"/>
+
+            <!-- vertical connector -->
+            <path d="M150 30 C146 60 158 90 152 128"
+                  fill="none" stroke="var(--sage-deep)" stroke-width=".9" opacity=".3"/>
+            <use href="#blossom" x="152" y="78"/>
+            <use href="#bud" x="146" y="58"/>
+          </pattern>
+        </defs>
+        <rect width="600" height="600" fill="url(#wallpaper)"/>
+      </svg>
+    </div>
+
+    <figure class="plate-img">
+      <img id="heroImg" alt="A hand-finished piece from the Monsoon Herbarium collection"/>
+    </figure>
+    <div class="plate-card">
+      <div class="season">Monsoon Herbarium, 2026</div>
+      <h1>Clothes pressed<br/>from real gardens</h1>
+      <p>Every piece is catalogued, numbered and cut in runs of thirty or fewer. When a specimen is gone, it is not reprinted.</p>
+      <div class="plate-acts">
+        <a class="btn solid" href="#shop">Browse the catalogue</a>
+        <a class="btn" id="heroWa" target="_blank" rel="noopener">Ask on WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- collections -->
+  <section class="band wrap" id="collections">
+    <div class="band-head">
+      <div>
+        <h2>Five ways we cut cloth</h2>
+        <p class="note">Each group follows its own block. Pick a shape first, then let colour decide.</p>
+      </div>
+      <button class="quiet" id="railReset">Show everything</button>
+    </div>
+    <div class="rail" id="rail"></div>
+  </section>
+
+  <!-- catalogue -->
+  <section class="band wrap" id="shop">
+    <div class="band-head">
+      <div>
+        <h2>The catalogue</h2>
+        <p class="note">Filter by shape, price, size and colour. Your selection stays in the address bar, so any view here can be sent to someone.</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="searchfield">
+        <input id="q" type="search" autocomplete="off" placeholder="Search by name, fabric or colour" aria-label="Search the catalogue"/>
+        <span aria-hidden="true">⌕</span>
+      </div>
+      <select class="sortfield" id="sort" aria-label="Sort the catalogue">
+        <option value="featured">Sort: Curated order</option>
+        <option value="new">Newest first</option>
+        <option value="price-asc">Price, low to high</option>
+        <option value="price-desc">Price, high to low</option>
+        <option value="name">Name, A to Z</option>
+      </select>
+    </div>
+
+    <div class="catbar" id="catbar"></div>
+
+    <button class="drawer-open-btn" id="openFilters">Filters and sorting <span id="filterTally"></span></button>
+
+    <div class="panels">
+      <section class="panel">
+        <div class="panel-top"><b>Price</b><button class="quiet" id="clearPrice" style="font-size:11px">Reset</button></div>
+        <div class="slider" id="slider">
+          <div class="slider-track"></div>
+          <div class="slider-fill" id="sliderFill"></div>
+          <input id="pMin" type="range" aria-label="Lowest price"/>
+          <input id="pMax" type="range" aria-label="Highest price"/>
+        </div>
+        <div class="slider-ends"><span id="pLow"></span><span id="pHigh"></span></div>
+      </section>
+      <section class="panel">
+        <div class="panel-top"><b>Size</b><span id="sizeSummary">Any</span></div>
+        <div class="opts" id="sizeOpts"></div>
+      </section>
+      <section class="panel">
+        <div class="panel-top"><b>Colour</b><span id="colourSummary">Any</span></div>
+        <div class="opts" id="colourOpts"></div>
+      </section>
+    </div>
+
+    <div class="resultbar">
+      <span id="countLabel">—</span>
+      <button class="quiet" id="clearAll">Clear all filters</button>
+    </div>
+
+    <div class="chipstrip" id="chips" hidden aria-label="Filters currently applied">
+      <span class="lede">Showing</span>
+      <span id="chipHost" style="display:contents"></span>
+      <button class="chip-clear" id="chipClear">Clear all</button>
+    </div>
+
+    <div class="grid" id="grid"></div>
+
+    <div class="more" id="more" hidden>
+      <button class="btn" id="loadMore">Show more pieces</button>
+      <span class="tally" id="progress"></span>
+      <div class="sentinel" id="sentinel" aria-hidden="true"></div>
+    </div>
+  </section>
+
+  <!-- editorial -->
+  <section class="field">
+    <div class="field-in wrap">
+      <div>
+        <h2>Thirty pieces, then the block is retired</h2>
+        <p>We print in small lots because the dye lots themselves are small. A run finishes when the cloth finishes. It keeps the work honest, and it means you are unlikely to meet yourself at a wedding.</p>
+        <a class="btn" href="#atelier">Read how it is made</a>
+      </div>
+      <figure class="shot"><img id="fieldImg" alt="Cloth being finished by hand in the workroom"/></figure>
+    </div>
+  </section>
+
+  <!-- recently added -->
+  <section class="band wrap">
+    <div class="band-head">
+      <div>
+        <h2>Added this month</h2>
+        <p class="note">The newest entries in the catalogue.</p>
+      </div>
+      <button class="quiet" id="seeAll">See the full catalogue</button>
+    </div>
+    <div class="grid snug" id="freshGrid"></div>
+  </section>
+
+  <!-- atelier -->
+  <section class="band wrap" id="atelier">
+    <div class="band-head">
+      <div>
+        <h2>The workroom</h2>
+      </div>
+    </div>
+    <div class="field-in" style="align-items:start">
+      <figure><img id="atelierImg" alt="Detail of hand embroidery on a finished garment"/></figure>
+      <div>
+        <p style="font-size:14.5px;line-height:1.8;color:var(--ink-soft);max-width:54ch;margin:0 0 16px">House of Flora began with a single block-printed kurta made for a friend's sister, and a stubborn conviction that the good stuff had quietly disappeared from the market.</p>
+        <p style="font-size:14.5px;line-height:1.8;color:var(--ink-soft);max-width:54ch;margin:0 0 16px">Today a small team cuts, prints and finishes everything in one workroom. Nothing is drop-shipped. Nothing is restocked once the cloth runs out. Every order is checked by a person before it is boxed, and if something is not right, you talk to that person, not a form.</p>
+        <p style="font-size:14.5px;line-height:1.8;color:var(--ink-soft);max-width:54ch;margin:0">Alterations up to two inches are included on every piece. Just say so when you order.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="ledger wrap">
+    <div><b>Small runs</b><span>Thirty pieces or fewer, then the block is retired.</span></div>
+    <div><b>Free alterations</b><span>Up to two inches, included with every order.</span></div>
+    <div><b>Seven-day returns</b><span>Unworn, tags on, reverse pickup arranged by us.</span></div>
+    <div><b>Order by message</b><span>Send a photo on WhatsApp and we will find it for you.</span></div>
+  </div>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <h4>House of Flora</h4>
+        <p>Contemporary Indian womenswear, cut and finished in small runs.</p>
+        <p id="footWaLine"></p>
+      </div>
+      <div>
+        <b>Shop</b>
+        <a href="#shop">All pieces</a>
+        <a href="#" data-cat="Kurta Sets">Kurta sets</a>
+        <a href="#" data-cat="Sarees">Sarees</a>
+        <a href="#" data-cat="Co-ords">Co-ords</a>
+      </div>
+      <div>
+        <b>Help</b>
+        <a href="#" data-info="size">Size guide</a>
+        <a href="#" data-info="shipping">Shipping and delivery</a>
+        <a href="#" data-info="returns">Returns and exchanges</a>
+        <a id="footWa" target="_blank" rel="noopener">WhatsApp support</a>
+      </div>
+      <div>
+        <b>Legal</b>
+        <a href="#" data-info="terms">Terms of use</a>
+        <a href="#" data-info="privacy">Privacy policy</a>
+        <a href="#" data-info="returns">Refund policy</a>
+      </div>
+    </div>
+    <div class="foot-rule">
+      <span>© 2026 House of Flora</span>
+      <span>Made in India</span>
+    </div>
+  </div>
+</footer>
+
+<!-- overlays -->
+<div class="veil" id="veil"></div>
+
+<aside class="slideover" id="bagPanel" aria-label="Shopping bag">
+  <div class="so-top"><h3>Your bag</h3><button id="bagClose" aria-label="Close bag">×</button></div>
+  <div class="so-body" id="bagBody"></div>
+  <div class="so-foot" id="bagFoot"></div>
+</aside>
+
+<aside class="slideover" id="wishPanel" aria-label="Saved pieces">
+  <div class="so-top"><h3>Saved pieces</h3><button id="wishClose" aria-label="Close saved pieces">×</button></div>
+  <div class="so-body" id="wishBody"></div>
+</aside>
+
+<aside class="slideover left" id="filterPanel" aria-label="Filters">
+  <div class="so-top"><h3>Filters</h3><button id="filterClose" aria-label="Close filters">×</button></div>
+  <div class="so-body" id="filterBody"></div>
+  <div class="so-foot">
+    <button class="btn solid block" id="applyFilters">Show results</button>
+    <button class="quiet" id="resetFilters" style="width:100%;margin-top:9px">Reset everything</button>
+  </div>
+</aside>
+
+<div class="sheetmodal" id="pdp" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="sheetmodal-in">
+    <button class="sheetmodal-x" id="pdpClose" aria-label="Close">×</button>
+    <div>
+      <div class="gal">
+        <button class="gal-arrow prev" id="galPrev" aria-label="Previous image">‹</button>
+        <img class="gal-main" id="galMain" alt=""/>
+        <button class="gal-arrow next" id="galNext" aria-label="Next image">›</button>
+      </div>
+      <div class="gal-dots" id="galDots"></div>
+    </div>
+    <div class="detail">
+      <div class="sku" id="pdpSku"></div>
+      <h2 id="pdpName"></h2>
+      <p class="sub" id="pdpSub"></p>
+      <div class="cost"><strong id="pdpPrice"></strong><del id="pdpWas"></del><span class="off" id="pdpOff"></span></div>
+      <p class="stockline" id="pdpStock"></p>
+      <div class="pick">
+        <div class="pick-top"><b>Colour</b><span id="pdpColourName"></span></div>
+        <div class="opts" id="pdpColours"></div>
+      </div>
+      <div class="pick">
+        <div class="pick-top"><b>Size</b><a href="#" data-info="size">Size guide</a></div>
+        <div class="opts" id="pdpSizes"></div>
+      </div>
+      <button class="btn solid block" id="pdpAdd">Add to bag</button>
+      <button class="btn block" id="pdpWa" style="margin-top:9px">Ask about this piece</button>
+      <div class="body">
+        <div id="pdpDesc"></div>
+        <dl id="pdpSpecs"></dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="sheetmodal" id="info" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="infoTitle">
+  <div class="sheetmodal-in" style="grid-template-columns:1fr;max-width:720px">
+    <button class="sheetmodal-x" id="infoClose" aria-label="Close">×</button>
+    <div class="prose" id="infoBody"></div>
+  </div>
+</div>
+
+<div class="sheetmodal" id="checkout" aria-hidden="true" role="dialog" aria-modal="true">
+  <div class="sheetmodal-in" style="grid-template-columns:1fr;max-width:560px">
+    <button class="sheetmodal-x" id="checkoutClose" aria-label="Close">×</button>
+    <div class="detail">
+      <h2 style="margin-top:0">Delivery details</h2>
+      <p class="sub">We will confirm your order on WhatsApp before it ships.</p>
+      <form id="checkoutForm" novalidate>
+        <div class="form-row">
+          <div><label class="field-l" for="cFirst">First name</label><input id="cFirst" name="firstName" required autocomplete="given-name"/></div>
+          <div><label class="field-l" for="cLast">Last name</label><input id="cLast" name="lastName" required autocomplete="family-name"/></div>
+        </div>
+        <div class="form-row">
+          <div><label class="field-l" for="cPhone">Mobile number</label><input id="cPhone" name="phone" inputmode="tel" required autocomplete="tel"/></div>
+          <div><label class="field-l" for="cEmail">Email</label><input id="cEmail" name="email" type="email" required autocomplete="email"/></div>
+        </div>
+        <div class="form-row one">
+          <div><label class="field-l" for="cAddr">Address</label><input id="cAddr" name="address" required autocomplete="street-address"/></div>
+        </div>
+        <div class="form-row">
+          <div><label class="field-l" for="cCity">City</label><input id="cCity" name="city" required autocomplete="address-level2"/></div>
+          <div><label class="field-l" for="cPin">Pincode</label><input id="cPin" name="pincode" inputmode="numeric" maxlength="6" required autocomplete="postal-code"/></div>
+        </div>
+        <div class="form-row one">
+          <div><label class="field-l" for="cNote">Anything we should know? Alterations, delivery timing, gift note.</label><textarea id="cNote" name="note"></textarea></div>
+        </div>
+        <div class="recap" id="recap"></div>
+        <div class="paynote" id="payNote"></div>
+        <button class="btn solid block" type="submit" id="payBtn">Continue to payment</button>
+        <button class="btn block" type="button" id="waOrderBtn" style="margin-top:9px">Send this order on WhatsApp instead</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════
+   House of Flora — storefront prototype
+   Front end only. Prices shown here are for display;
+   a live store must recalculate every amount server side.
+   See ARCHITECTURE.md §8.
+   ══════════════════════════════════════════════════════ */
+
+const CONFIG = {
+  brand: "House of Flora",
+  whatsapp: "919000000000",        // ← replace with the real number
+  razorpayKeyId: "",               // ← from Razorpay dashboard (key_id only)
+  paymentsLive: false,             // flip once the backend order route exists
+  apiBase: ""                      // e.g. "https://api.houseofflora.com"
+};
+
+const IMG = id => `https://images.unsplash.com/${id}?auto=format&fit=crop&w=900&q=85`;
+const P = {
+  a:"photo-1610030469668-8e9f641aaf13", b:"photo-1610189028606-5459e43b4c2c",
+  c:"photo-1583391733975-d89b2a8e574d", d:"photo-1595777457583-95e059d581b8",
+  e:"photo-1597983073493-88cd35cf93b0", f:"photo-1609357605129-26f69add5d6e",
+  g:"photo-1610030469983-98e550d6193c", h:"photo-1610189012906-4c0aa9b9781e",
+  i:"photo-1614251055880-ee96e4803393", j:"photo-1583391733956-6c78276477e2"
+};
+
+/* ── SITE IMAGE SLOTS ───────────────────────────────
+   Every non-product image on the page. Replace each URL
+   with the real photograph when the shoot lands.
+   Required ratios (these match the CSS — wrong ratios crop badly):
+     hero     4:5 vertical
+     story    5:4 horizontal
+     workroom 5:4 horizontal
+   ──────────────────────────────────────────────────── */
+const SITE_IMAGES = {
+  hero:     IMG(P.e),   // homepage hero, arched frame
+  story:    IMG(P.f),   // "thirty pieces" band
+  workroom: IMG(P.i)    // atelier section
+};
+
+const PALETTE = {
+  "Fern":"#4a6b52", "Iris":"#d99b90", "Marigold":"#d99a2b", "Indigo":"#2e3a5c",
+  "Chalk":"#ece8df", "Madder":"#8c3a34", "Clay":"#c98f84", "Ink":"#2b3a2a",
+  "Moss":"#7c8b5e", "Ash Rose":"#b79a9a"
+};
+
+const PRODUCTS = [
+  { id:"oleander", sku:"HOF-001", name:"Oleander Kurta Set", category:"Kurta Sets", added:9,
+    price:5400, was:6400, flag:"New", fabric:"Hand-block cotton mul", stock:6,
+    sub:"Straight kurta, tapered trousers, and a mul dupatta that weighs almost nothing.",
+    desc:"Printed with a repeating oleander sprig on soft cotton mul. The kurta falls straight from the shoulder with a deep side slit, cut to sit well over trousers or a skirt. Finished with a hand-rolled hem.",
+    colours:["Fern","Chalk","Madder"], sizes:["XS","S","M","L","XL","XXL"], images:[IMG(P.a),IMG(P.b),IMG(P.c)] },
+
+  { id:"amaltas", sku:"HOF-002", name:"Amaltas Lehenga", category:"Lehengas", added:8,
+    price:16800, was:19500, flag:"Occasion", fabric:"Raw silk with zari", stock:3,
+    sub:"A full-circle skirt in marigold raw silk, cut for a long evening.",
+    desc:"Twelve panels of raw silk fall into a full circle, weighted at the hem so it moves properly when you do. Zari work runs along the border in a cassia motif. Comes with a blouse and a net dupatta.",
+    colours:["Marigold","Madder","Indigo"], sizes:["XS","S","M","L","XL"], images:[IMG(P.d),IMG(P.e),IMG(P.a)] },
+
+  { id:"jasmine", sku:"HOF-003", name:"Jasmine Saree", category:"Sarees", added:7,
+    price:8900, was:0, flag:"", fabric:"Chanderi silk cotton", stock:9,
+    sub:"Six and a half yards of chanderi, with a jasmine buti throughout.",
+    desc:"Woven chanderi in a weight that drapes without slipping. Small jasmine butis are scattered across the body, gathering into a denser band at the pallu. Comes with an unstitched blouse piece.",
+    colours:["Chalk","Ash Rose","Fern"], sizes:["Free"], images:[IMG(P.f),IMG(P.g),IMG(P.h)] },
+
+  { id:"indigo-fern", sku:"HOF-004", name:"Indigo Fern Co-ord", category:"Co-ords", added:10,
+    price:6200, was:7400, flag:"New", fabric:"Natural indigo cotton", stock:11,
+    sub:"A boxy shirt and wide-leg trousers, dyed in a single indigo vat.",
+    desc:"Dyed in a natural indigo vat, so no two sets land on exactly the same shade. The shirt is cut boxy with a dropped shoulder; the trousers are wide through the leg with a flat front and side pockets that actually fit a hand.",
+    colours:["Indigo","Ink"], sizes:["XS","S","M","L","XL","XXL"], images:[IMG(P.h),IMG(P.i),IMG(P.j)] },
+
+  { id:"wild-iris", sku:"HOF-005", name:"Wild Iris Anarkali", category:"Kurta Sets", added:6,
+    price:9800, was:11200, flag:"", fabric:"Georgette with lining", stock:4,
+    sub:"A floor-length anarkali with iris embroidery through the yoke.",
+    desc:"Gathered from a fitted yoke into a wide floor-length sweep. Iris heads are embroidered across the yoke in matte thread, deliberately restrained. Fully lined, with a concealed side zip.",
+    colours:["Iris","Ink","Madder"], sizes:["XS","S","M","L","XL"], images:[IMG(P.b),IMG(P.c),IMG(P.d)] },
+
+  { id:"tuberose", sku:"HOF-006", name:"Tuberose Dress", category:"Dresses", added:9,
+    price:4900, was:0, flag:"", fabric:"Cotton poplin", stock:14,
+    sub:"A button-through midi with a tuberose print and real pockets.",
+    desc:"Buttons the whole way down, so it works open over trousers too. The tuberose print is screen-printed in three passes on crisp cotton poplin. Gathered at the waist with a self belt, and yes, the pockets are deep.",
+    colours:["Chalk","Clay","Moss"], sizes:["XS","S","M","L","XL","XXL"], images:[IMG(P.i),IMG(P.j),IMG(P.f)] },
+
+  { id:"palash", sku:"HOF-007", name:"Palash Saree", category:"Sarees", added:5,
+    price:12400, was:14000, flag:"Occasion", fabric:"Tussar silk", stock:2,
+    sub:"Tussar in flame-of-the-forest red, with a hand-painted pallu.",
+    desc:"Tussar silk in a deep palash red, with its characteristic slub left visible. The pallu is hand-painted with flowering branches, which means the placement varies slightly from piece to piece.",
+    colours:["Madder","Marigold"], sizes:["Free"], images:[IMG(P.e),IMG(P.d),IMG(P.g)] },
+
+  { id:"champa", sku:"HOF-008", name:"Champa Co-ord", category:"Co-ords", added:8,
+    price:5600, was:6900, flag:"", fabric:"Linen blend", stock:8,
+    sub:"A cropped kurta over a straight skirt, in a warm champa cream.",
+    desc:"Linen blended with a little viscose so it creases less than pure linen but keeps the texture. The kurta sits at the high hip; the skirt is straight with a walking slit at the back.",
+    colours:["Chalk","Moss","Clay"], sizes:["XS","S","M","L","XL"], images:[IMG(P.j),IMG(P.a),IMG(P.i)] },
+
+  { id:"neem", sku:"HOF-009", name:"Neem Shirt Dress", category:"Dresses", added:10,
+    price:4200, was:0, flag:"New", fabric:"Handwoven khadi", stock:16,
+    sub:"Khadi, cut long and loose, with neem leaves printed at the hem.",
+    desc:"Handwoven khadi that softens considerably after the first wash. Cut long and easy with a collar and a half placket. A neem-leaf border is block printed around the hem and cuffs.",
+    colours:["Moss","Chalk","Indigo"], sizes:["S","M","L","XL","XXL"], images:[IMG(P.c),IMG(P.h),IMG(P.b)] },
+
+  { id:"marigold-lehenga", sku:"HOF-010", name:"Marigold Panelled Lehenga", category:"Lehengas", added:4,
+    price:21500, was:24000, flag:"Occasion", fabric:"Silk organza", stock:2,
+    sub:"Sixteen organza panels, layered so the colour shifts as you move.",
+    desc:"Sixteen panels of silk organza in graded marigold tones, layered so the skirt reads lighter at the hem than at the waist. Structured at the waistband to hold its shape through a full evening.",
+    colours:["Marigold","Ash Rose"], sizes:["XS","S","M","L"], images:[IMG(P.g),IMG(P.f),IMG(P.e)] },
+
+  { id:"ashoka", sku:"HOF-011", name:"Ashoka Kurta", category:"Kurta Sets", added:7,
+    price:3600, was:4400, flag:"", fabric:"Cotton voile", stock:19,
+    sub:"A single kurta, cut long, for the days that need no decision.",
+    desc:"Plain cotton voile with a narrow ashoka-leaf trim at the neckline. Cut long and straight with side slits to the hip. Sold on its own, to go with whatever you already own.",
+    colours:["Chalk","Fern","Ash Rose","Ink"], sizes:["XS","S","M","L","XL","XXL"], images:[IMG(P.a),IMG(P.j),IMG(P.c)] },
+
+  { id:"kadamba", sku:"HOF-012", name:"Kadamba Draped Dress", category:"Dresses", added:6,
+    price:7400, was:8600, flag:"", fabric:"Modal satin", stock:5,
+    sub:"Draped at one shoulder, in a satin that holds the fold.",
+    desc:"Modal satin, cut on the bias and gathered at one shoulder so the drape stays put instead of sliding. Falls to mid-calf. Lined through the bodice only, to keep the weight down.",
+    colours:["Iris","Ink","Madder"], sizes:["XS","S","M","L","XL"], images:[IMG(P.d),IMG(P.i),IMG(P.h)] }
+];
+
+const CATEGORIES = [
+  { name:"Kurta Sets", blurb:"Straight, gathered, or cropped",  image:IMG(P.a) },
+  { name:"Sarees",     blurb:"Chanderi, tussar, and cotton",    image:IMG(P.f) },
+  { name:"Co-ords",    blurb:"Two pieces, cut to travel",       image:IMG(P.h) },
+  { name:"Dresses",    blurb:"For the days in between",         image:IMG(P.i) },
+  { name:"Lehengas",   blurb:"Made for the long evenings",      image:IMG(P.g) }
+];
+
+const COUPONS = {
+  "FLORA10":  { type:"percent", value:10, min:4000,  label:"10% off" },
+  "FIRSTCUT": { type:"fixed",   value:500, min:3000, label:"₹500 off your first order" }
+};
+
+const PRICE_FLOOR = 0;
+const PRICE_CEIL  = Math.ceil(Math.max(...PRODUCTS.map(p => p.price)) / 500) * 500;
+const ALL_SIZES   = [...new Set(PRODUCTS.flatMap(p => p.sizes))]
+                      .sort((a,b) => ["Free","XS","S","M","L","XL","XXL"].indexOf(a) - ["Free","XS","S","M","L","XL","XXL"].indexOf(b));
+const ALL_COLOURS = [...new Set(PRODUCTS.flatMap(p => p.colours))].sort();
+
+/* ── state ─────────────────────────────────────────── */
+const store = {
+  bag:  read("hof_bag",  []),
+  wish: read("hof_wish", []),
+  coupon: localStorage.getItem("hof_coupon") || "",
+  // live filters
+  q:"", cat:"All", sort:"featured",
+  min:null, max:null, sizes:[], colours:[],
+  // drawer drafts (applied only on "Show results")
+  draft:null,
+  shown: 8, pageSize: 8,
+  // pdp
+  current:null, pickedSize:"", pickedColour:"", galIndex:0
+};
+
+function read(key, fallback){
+  try { return JSON.parse(localStorage.getItem(key)) ?? fallback; }
+  catch { return fallback; }
+}
+function persist(){
+  localStorage.setItem("hof_bag",  JSON.stringify(store.bag));
+  localStorage.setItem("hof_wish", JSON.stringify(store.wish));
+  localStorage.setItem("hof_coupon", store.coupon);
+  paintTallies();
+}
+
+/* ── image failure handling ─────────────────────────
+   Any image that fails to load is replaced with a branded
+   sage placeholder carrying the garment name, rather than
+   the browser's broken-image icon. Covers bad URLs, blocked
+   hosts, rate limiting and flaky connections.
+   ──────────────────────────────────────────────────── */
+function placeholderImage(label, ratio){
+  const [w,h] = ratio === "wide" ? [1000,800] : [900,1200];
+  const text = (label || "House of Flora").slice(0, 32);
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 ${w} ${h}">
+    <rect width="${w}" height="${h}" fill="#c8d6c4"/>
+    <g transform="translate(${w/2} ${h/2 - 40})" opacity=".55">
+      <circle cx="0" cy="-34" r="17" fill="#fdfcf8"/>
+      <circle cx="32" cy="-11" r="17" fill="#fdfcf8"/>
+      <circle cx="20" cy="27" r="17" fill="#fdfcf8"/>
+      <circle cx="-20" cy="27" r="17" fill="#fdfcf8"/>
+      <circle cx="-32" cy="-11" r="17" fill="#fdfcf8"/>
+      <circle cx="0" cy="0" r="10" fill="#d99b90"/>
+    </g>
+    <text x="${w/2}" y="${h/2 + 70}" text-anchor="middle"
+          font-family="Georgia,serif" font-size="30" fill="#5f7a5c">${escapeXml(text)}</text>
+    <text x="${w/2}" y="${h/2 + 108}" text-anchor="middle"
+          font-family="Helvetica,Arial,sans-serif" font-size="17" letter-spacing="3" fill="#7d8c79">IMAGE COMING SOON</text>
+  </svg>`;
+  return "data:image/svg+xml;charset=utf-8," + encodeURIComponent(svg);
+}
+
+function escapeXml(s){
+  return String(s).replace(/[<>&"']/g, c =>
+    ({ "<":"&lt;", ">":"&gt;", "&":"&amp;", '"':"&quot;", "'":"&apos;" }[c]));
+}
+
+/* Capture phase, because image error events do not bubble.
+   One listener covers every image, including ones added later. */
+document.addEventListener("error", e => {
+  const img = e.target;
+  if (!(img instanceof HTMLImageElement)) return;
+  if (img.dataset.fallbackApplied) return;        // avoid a loop
+  img.dataset.fallbackApplied = "1";
+
+  // The hover image sits on top of the main one. If it fails,
+  // hide it so the main photo stays visible underneath.
+  if (img.classList.contains("alt")){
+    img.remove();
+    return;
+  }
+
+  const wide = img.closest(".field") || img.width > img.height;
+  img.src = placeholderImage(img.alt || img.dataset.label, wide ? "wide" : "tall");
+}, true);
+
+const $  = (s, r=document) => r.querySelector(s);
+const $$ = (s, r=document) => [...r.querySelectorAll(s)];
+const rupees = n => new Intl.NumberFormat("en-IN",{style:"currency",currency:"INR",maximumFractionDigits:0}).format(n);
+const hex = name => PALETTE[name] || "#b6bdb4";
+const byId = id => PRODUCTS.find(p => p.id === id);
+
+let toastTimer;
+function toast(msg){
+  const t = $("#toast");
+  t.textContent = msg;
+  t.classList.add("on");
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove("on"), 2600);
+}
+
+/* ── WhatsApp ──────────────────────────────────────── */
+function wa(text){
+  return `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+}
+function wireWhatsapp(){
+  $("#heroWa").href  = wa(`Hello ${CONFIG.brand}, I would like to see what is available.`);
+  $("#footWa").href  = wa(`Hello ${CONFIG.brand}, I have a question about an order.`);
+  $("#dropWa").href  = wa(`Hello ${CONFIG.brand}, I would like to see what is available.`);
+  $("#footWaLine").textContent = "Reach us on WhatsApp, 10am to 7pm, Monday to Saturday.";
+}
+
+/* ── URL sync ──────────────────────────────────────── */
+function stateToUrl(replace){
+  const p = new URLSearchParams();
+  if (store.q)                    p.set("q", store.q);
+  if (store.cat !== "All")        p.set("cat", store.cat);
+  if (store.min !== null)         p.set("min", store.min);
+  if (store.max !== null)         p.set("max", store.max);
+  store.sizes.forEach(s   => p.append("size", s));
+  store.colours.forEach(c => p.append("colour", c));
+  if (store.sort !== "featured")  p.set("sort", store.sort);
+
+  const url = p.toString() ? `${location.pathname}?${p}` : location.pathname;
+  history[replace ? "replaceState" : "pushState"]({}, "", url + location.hash);
+}
+
+function urlToState(){
+  const p = new URLSearchParams(location.search);
+  store.q    = p.get("q") || "";
+  store.cat  = p.get("cat") || "All";
+  store.sort = p.get("sort") || "featured";
+
+  const min = p.get("min"), max = p.get("max");
+  store.min = min !== null && min !== "" && !isNaN(+min) ? +min : null;
+  store.max = max !== null && max !== "" && !isNaN(+max) ? +max : null;
+
+  store.sizes   = p.getAll("size").filter(s => ALL_SIZES.includes(s));
+  store.colours = p.getAll("colour").filter(c => ALL_COLOURS.includes(c));
+
+  const sortable = ["featured","new","price-asc","price-desc","name"];
+  if (!sortable.includes(store.sort)) store.sort = "featured";
+  if (store.cat !== "All" && !CATEGORIES.some(c => c.name === store.cat)) store.cat = "All";
+  store.shown = store.pageSize;
+}
+
+/* ── filtering ─────────────────────────────────────── */
+function activeCount(){
+  return (store.cat !== "All" ? 1 : 0)
+       + (store.min !== null || store.max !== null ? 1 : 0)
+       + store.sizes.length + store.colours.length;
+}
+
+function filtered(){
+  const needle = store.q.trim().toLowerCase();
+  let out = PRODUCTS.filter(p => {
+    if (store.cat !== "All" && p.category !== store.cat) return false;
+    if (store.min !== null && p.price < store.min) return false;
+    if (store.max !== null && p.price > store.max) return false;
+    if (store.sizes.length   && !store.sizes.some(s => p.sizes.includes(s))) return false;
+    if (store.colours.length && !store.colours.some(c => p.colours.includes(c))) return false;
+    if (needle){
+      const hay = [p.name, p.category, p.fabric, p.sub, ...p.colours].join(" ").toLowerCase();
+      if (!hay.includes(needle)) return false;
+    }
+    return true;
+  });
+
+  const order = {
+    "price-asc":  (a,b) => a.price - b.price,
+    "price-desc": (a,b) => b.price - a.price,
+    "name":       (a,b) => a.name.localeCompare(b.name),
+    "new":        (a,b) => b.added - a.added
+  }[store.sort];
+  if (order) out = [...out].sort(order);
+  return out;
+}
+
+/* ── rendering: catalogue ──────────────────────────── */
+function specCard(p){
+  const saved = store.wish.includes(p.id);
+  const off   = p.was ? Math.round((1 - p.price / p.was) * 100) : 0;
+  return `
+  <article class="spec">
+    <div class="spec-img">
+      <button class="spec-fav ${saved ? "on" : ""}" data-wish="${p.id}"
+              aria-label="${saved ? "Remove from saved" : "Save"} ${p.name}"
+              aria-pressed="${saved}">${saved ? "♥" : "♡"}</button>
+      ${p.flag ? `<span class="spec-flag">${p.flag}</span>` : ""}
+      <button data-open="${p.id}" style="border:0;padding:0;background:none;width:100%;display:block" aria-label="View ${p.name}">
+        <img src="${p.images[0]}" alt="${p.name}" loading="lazy"/>
+        ${p.images[1] ? `<img class="alt" src="${p.images[1]}" alt="" aria-hidden="true" loading="lazy" style="position:absolute;inset:0;height:100%;object-fit:cover"/>` : ""}
+      </button>
+    </div>
+    <button class="spec-label" data-open="${p.id}" style="border:0;background:none">
+      <span class="spec-sku">${p.sku}</span>
+      <h3 class="spec-name">${p.name}</h3>
+      <p class="spec-meta">${p.fabric}</p>
+      <span class="spec-price">
+        ${rupees(p.price)}
+        ${p.was ? `<del>${rupees(p.was)}</del><span class="off">${off}% off</span>` : ""}
+      </span>
+    </button>
+  </article>`;
+}
+
+function paintGrid(){
+  const list = filtered();
+  const slice = list.slice(0, store.shown);
+  const grid = $("#grid");
+
+  if (!list.length){
+    grid.innerHTML = `
+      <div class="empty">
+        <h3>Nothing matches that combination</h3>
+        <p>Try widening the price range, or clear a filter or two.</p>
+        <button class="btn" id="emptyReset">Clear all filters</button>
+      </div>`;
+    $("#emptyReset").addEventListener("click", clearEverything);
+  } else {
+    grid.innerHTML = slice.map(specCard).join("");
+  }
+
+  $("#countLabel").textContent =
+    list.length === 0 ? "No pieces" :
+    list.length === 1 ? "1 piece" : `${list.length} pieces`;
+
+  const more = $("#more");
+  if (list.length > store.shown){
+    more.hidden = false;
+    $("#progress").textContent = `Showing ${slice.length} of ${list.length}`;
+  } else {
+    more.hidden = true;
+  }
+
+  paintChips();
+  $("#filterTally").textContent = activeCount() ? `(${activeCount()})` : "";
+}
+
+function paintChips(){
+  const host = $("#chipHost");
+  const bits = [];
+
+  if (store.cat !== "All")
+    bits.push({ label: store.cat, kind:"cat" });
+
+  if (store.min !== null || store.max !== null){
+    const lo = store.min ?? PRICE_FLOOR, hi = store.max ?? PRICE_CEIL;
+    bits.push({ label:`${rupees(lo)} – ${rupees(hi)}`, kind:"price" });
+  }
+
+  store.sizes.forEach(s   => bits.push({ label:`Size ${s}`, kind:"size", value:s }));
+  store.colours.forEach(c => bits.push({ label:c, kind:"colour", value:c, swatch:hex(c) }));
+
+  if (!bits.length){ $("#chips").hidden = true; return; }
+  $("#chips").hidden = false;
+
+  host.innerHTML = bits.map(b => `
+    <button class="chip" data-drop="${b.kind}" ${b.value ? `data-value="${b.value}"` : ""}
+            aria-label="Remove filter ${b.label}">
+      ${b.swatch ? `<span class="dot" style="background:${b.swatch}"></span>` : ""}
+      ${b.label}<span class="x" aria-hidden="true">×</span>
+    </button>`).join("");
+}
+
+/* ── rendering: controls ───────────────────────────── */
+function paintCatbar(){
+  const cats = ["All", ...CATEGORIES.map(c => c.name)];
+  $("#catbar").innerHTML = cats.map(c =>
+    `<button class="catpill ${store.cat === c ? "on" : ""}" data-cat="${c}"
+             aria-pressed="${store.cat === c}">${c === "All" ? "Everything" : c}</button>`
+  ).join("");
+}
+
+function paintPanels(){
+  $("#sizeOpts").innerHTML = ALL_SIZES.map(s =>
+    `<button class="opt ${store.sizes.includes(s) ? "on" : ""}" data-size="${s}"
+             aria-pressed="${store.sizes.includes(s)}">${s}</button>`).join("");
+
+  $("#colourOpts").innerHTML = ALL_COLOURS.map(c =>
+    `<button class="opt colour ${store.colours.includes(c) ? "on" : ""}" data-colour="${c}"
+             aria-pressed="${store.colours.includes(c)}">
+       <span class="dot" style="background:${hex(c)}"></span>${c}
+     </button>`).join("");
+
+  $("#sizeSummary").textContent   = store.sizes.length   ? store.sizes.join(", ")   : "Any";
+  $("#colourSummary").textContent = store.colours.length ? `${store.colours.length} selected` : "Any";
+
+  paintSlider();
+}
+
+function paintSlider(){
+  const lo = store.min ?? PRICE_FLOOR;
+  const hi = store.max ?? PRICE_CEIL;
+  const a = $("#pMin"), b = $("#pMax");
+
+  [a,b].forEach(el => { el.min = PRICE_FLOOR; el.max = PRICE_CEIL; el.step = 500; });
+  a.value = lo; b.value = hi;
+
+  const span = PRICE_CEIL - PRICE_FLOOR || 1;
+  const left  = ((lo - PRICE_FLOOR) / span) * 100;
+  const right = ((hi - PRICE_FLOOR) / span) * 100;
+  const fill = $("#sliderFill");
+  fill.style.left  = left + "%";
+  fill.style.width = Math.max(0, right - left) + "%";
+
+  $("#pLow").textContent  = rupees(lo);
+  $("#pHigh").textContent = rupees(hi);
+}
+
+function paintRail(){
+  $("#rail").innerHTML = CATEGORIES.map(c => `
+    <button data-cat="${c.name}">
+      <img src="${c.image}" alt="${c.name}" loading="lazy"/>
+      <h3>${c.name}</h3>
+      <p>${c.blurb}</p>
+    </button>`).join("");
+}
+
+function paintFresh(){
+  const fresh = [...PRODUCTS].sort((a,b) => b.added - a.added).slice(0,3);
+  $("#freshGrid").innerHTML = fresh.map(specCard).join("");
+}
+
+function paintTallies(){
+  const bagCount  = store.bag.reduce((n,l) => n + l.qty, 0);
+  const wishCount = store.wish.length;
+  const bt = $("#bagTally"), wt = $("#wishTally");
+  bt.textContent = bagCount;  bt.dataset.zero = bagCount  ? "0" : "1";
+  wt.textContent = wishCount; wt.dataset.zero = wishCount ? "0" : "1";
+}
+
+/* ── mutations ─────────────────────────────────────── */
+function commit(push){
+  store.shown = store.pageSize;
+  stateToUrl(!push);
+  paintCatbar();
+  paintPanels();
+  paintGrid();
+}
+
+function clearEverything(){
+  store.q = ""; store.cat = "All"; store.min = null; store.max = null;
+  store.sizes = []; store.colours = []; store.sort = "featured";
+  $("#q").value = ""; $("#sort").value = "featured";
+  commit(true);
+  toast("Filters cleared");
+}
+
+function toggleIn(list, value){
+  const i = list.indexOf(value);
+  if (i > -1) list.splice(i,1); else list.push(value);
+}
+
+/* ── bag & wishlist ────────────────────────────────── */
+function addToBag(product, size, colour, qty=1){
+  const key = `${product.id}|${size}|${colour}`;
+  const line = store.bag.find(l => l.key === key);
+  if (line) line.qty += qty;
+  else store.bag.push({ key, id:product.id, size, colour, qty });
+  persist();
+  paintBag();
+}
+
+function bagTotals(){
+  const sub = store.bag.reduce((n,l) => {
+    const p = byId(l.id);
+    return p ? n + p.price * l.qty : n;
+  }, 0);
+
+  let discount = 0, couponLabel = "";
+  const c = COUPONS[store.coupon];
+  if (c && sub >= c.min){
+    discount = c.type === "percent" ? Math.round(sub * c.value / 100) : c.value;
+    couponLabel = c.label;
+  }
+  const shipping = sub === 0 ? 0 : (sub - discount >= 5000 ? 0 : 150);
+  return { sub, discount, couponLabel, shipping, total: Math.max(0, sub - discount + shipping) };
+}
+
+function paintBag(){
+  const body = $("#bagBody"), foot = $("#bagFoot");
+
+  if (!store.bag.length){
+    body.innerHTML = `
+      <div class="blank">
+        <p>Your bag is empty.<br/>Everything in the catalogue is made in small runs, so pieces do move.</p>
+        <button class="btn" id="bagBrowse">Browse the catalogue</button>
+      </div>`;
+    foot.innerHTML = "";
+    $("#bagBrowse").addEventListener("click", () => { closeAll(); $("#shop").scrollIntoView(); });
+    return;
+  }
+
+  body.innerHTML = store.bag.map(l => {
+    const p = byId(l.id);
+    if (!p) return "";
+    return `
+    <div class="line">
+      <img src="${p.images[0]}" alt="${p.name}"/>
+      <div>
+        <h4>${p.name}</h4>
+        <p class="attrs">${l.colour} · Size ${l.size}</p>
+        <div class="qty">
+          <button data-step="-1" data-key="${l.key}" aria-label="Reduce quantity">−</button>
+          <span>${l.qty}</span>
+          <button data-step="1" data-key="${l.key}" aria-label="Increase quantity">+</button>
+        </div>
+      </div>
+      <div class="right">
+        <b>${rupees(p.price * l.qty)}</b>
+        <button class="quiet" data-remove="${l.key}">Remove</button>
+      </div>
+    </div>`;
+  }).join("");
+
+  const t = bagTotals();
+  const gap = 5000 - (t.sub - t.discount);
+  const nudge = gap > 0
+    ? `<div class="nudge">Add <b>${rupees(gap)}</b> more and delivery is free.
+         <span class="bar"><i style="width:${Math.min(100, ((t.sub - t.discount) / 5000) * 100)}%"></i></span>
+       </div>`
+    : `<div class="nudge"><b>Delivery is free</b> on this order.</div>`;
+
+  foot.innerHTML = nudge + `
+    <div class="coupon">
+      <input id="couponInput" placeholder="Discount code" value="${store.coupon}" aria-label="Discount code"/>
+      <button id="couponApply">Apply</button>
+    </div>
+    <div class="sums">
+      <div><span>Subtotal</span><span>${rupees(t.sub)}</span></div>
+      ${t.discount ? `<div class="save"><span>${t.couponLabel}</span><span>− ${rupees(t.discount)}</span></div>` : ""}
+      <div><span>Delivery</span><span>${t.shipping ? rupees(t.shipping) : "Free"}</span></div>
+      <div class="grand"><span>Total</span><span>${rupees(t.total)}</span></div>
+    </div>
+    <button class="btn solid block" id="toCheckout">Checkout</button>
+    <button class="btn block" id="bagWa" style="margin-top:9px">Send this bag on WhatsApp</button>`;
+}
+
+function paintWish(){
+  const body = $("#wishBody");
+  if (!store.wish.length){
+    body.innerHTML = `
+      <div class="blank">
+        <p>Nothing saved yet.<br/>Tap the heart on any piece to keep it here.</p>
+        <button class="btn" id="wishBrowse">Browse the catalogue</button>
+      </div>`;
+    $("#wishBrowse").addEventListener("click", () => { closeAll(); $("#shop").scrollIntoView(); });
+    return;
+  }
+  body.innerHTML = store.wish.map(id => {
+    const p = byId(id);
+    if (!p) return "";
+    return `
+    <div class="line">
+      <img src="${p.images[0]}" alt="${p.name}"/>
+      <div>
+        <h4>${p.name}</h4>
+        <p class="attrs">${p.fabric}</p>
+        <button class="btn" style="padding:8px 14px;font-size:11px" data-open="${p.id}">View piece</button>
+      </div>
+      <div class="right">
+        <b>${rupees(p.price)}</b>
+        <button class="quiet" data-wish="${p.id}">Remove</button>
+      </div>
+    </div>`;
+  }).join("");
+}
+
+/* ── product detail ────────────────────────────────── */
+function openPdp(id){
+  const p = byId(id);
+  if (!p) return;
+  store.current = p;
+  store.pickedColour = p.colours[0];
+  store.pickedSize = "";
+  store.galIndex = 0;
+
+  $("#pdpSku").textContent  = p.sku;
+  $("#pdpName").textContent = p.name;
+  $("#pdpSub").textContent  = p.sub;
+  $("#pdpPrice").textContent = rupees(p.price);
+  $("#pdpWas").textContent  = p.was ? rupees(p.was) : "";
+  $("#pdpOff").textContent  = p.was ? `${Math.round((1 - p.price / p.was) * 100)}% off` : "";
+  $("#pdpDesc").textContent = p.desc;
+
+  $("#pdpStock").textContent = p.stock <= 3
+    ? `Only ${p.stock} left in this run`
+    : `${p.stock} available`;
+  $("#pdpStock").classList.toggle("low", p.stock <= 3);
+
+  $("#pdpSpecs").innerHTML = `
+    <dt>Fabric</dt><dd>${p.fabric}</dd>
+    <dt>Category</dt><dd>${p.category}</dd>
+    <dt>Code</dt><dd>${p.sku}</dd>
+    <dt>Alterations</dt><dd>Up to 2 inches, included</dd>`;
+
+  $("#pdpWa").onclick = () =>
+    window.open(wa(`Hello ${CONFIG.brand}, I would like to know more about ${p.name} (${p.sku}).`), "_blank");
+
+  paintPdpOptions();
+  paintGallery();
+  openPanel("#pdp");
+}
+
+function paintPdpOptions(){
+  const p = store.current;
+  $("#pdpColourName").textContent = store.pickedColour;
+  $("#pdpColours").innerHTML = p.colours.map(c =>
+    `<button class="swatch ${store.pickedColour === c ? "on" : ""}" data-pick-colour="${c}"
+             style="background:${hex(c)}" title="${c}" aria-label="${c}"
+             aria-pressed="${store.pickedColour === c}"></button>`).join("");
+  $("#pdpSizes").innerHTML = p.sizes.map(s =>
+    `<button class="opt ${store.pickedSize === s ? "on" : ""}" data-pick-size="${s}"
+             aria-pressed="${store.pickedSize === s}">${s}</button>`).join("");
+}
+
+function paintGallery(){
+  const p = store.current;
+  $("#galMain").src = p.images[store.galIndex];
+  $("#galMain").alt = `${p.name}, view ${store.galIndex + 1}`;
+  $("#galDots").innerHTML = p.images.map((_,i) =>
+    `<button class="${i === store.galIndex ? "on" : ""}" data-gal="${i}" aria-label="Image ${i+1}"></button>`).join("");
+}
+
+function stepGallery(delta){
+  const n = store.current.images.length;
+  store.galIndex = (store.galIndex + delta + n) % n;
+  paintGallery();
+}
+
+/* ── size chart & policies ─────────────────────────── */
+/* Measurements are BODY measurements in inches, not garment.
+   Replace these with real numbers taken off your own blocks. */
+const SIZE_CHART = {
+  "Kurta Sets": [
+    ["XS","31–32","25–26","34–35","44"],
+    ["S", "33–34","27–28","36–37","44.5"],
+    ["M", "35–36","29–30","38–39","45"],
+    ["L", "37–38","31–32","40–41","45.5"],
+    ["XL","39–41","33–35","42–44","46"],
+    ["XXL","42–44","36–38","45–47","46.5"]
+  ],
+  "Dresses": [
+    ["XS","31–32","25–26","34–35","48"],
+    ["S", "33–34","27–28","36–37","48.5"],
+    ["M", "35–36","29–30","38–39","49"],
+    ["L", "37–38","31–32","40–41","49.5"],
+    ["XL","39–41","33–35","42–44","50"],
+    ["XXL","42–44","36–38","45–47","50.5"]
+  ],
+  "Co-ords": [
+    ["XS","31–32","25–26","34–35","—"],
+    ["S", "33–34","27–28","36–37","—"],
+    ["M", "35–36","29–30","38–39","—"],
+    ["L", "37–38","31–32","40–41","—"],
+    ["XL","39–41","33–35","42–44","—"],
+    ["XXL","42–44","36–38","45–47","—"]
+  ],
+  "Lehengas": [
+    ["XS","31–32","25–26","34–35","40"],
+    ["S", "33–34","27–28","36–37","40"],
+    ["M", "35–36","29–30","38–39","41"],
+    ["L", "37–38","31–32","40–41","41"],
+    ["XL","39–41","33–35","42–44","42"]
+  ]
+};
+
+function sizeGuideHtml(active){
+  const groups = Object.keys(SIZE_CHART);
+  const which = groups.includes(active) ? active : groups[0];
+  const rows = SIZE_CHART[which].map(r =>
+    `<tr><td><b style="color:var(--ink)">${r[0]}</b></td><td>${r[1]}</td><td>${r[2]}</td><td>${r[3]}</td><td>${r[4]}</td></tr>`
+  ).join("");
+
+  return `
+    <h2 id="infoTitle">Size guide</h2>
+    <div class="kicker">BODY MEASUREMENTS, IN INCHES</div>
+    <p>These are body measurements, not garment measurements. We add ease when we cut, and how much depends on the style — an anarkali is cut fuller than a co-ord.</p>
+    <div class="tabstrip">
+      ${groups.map(g => `<button data-size-tab="${g}" class="${g === which ? "on" : ""}">${g}</button>`).join("")}
+    </div>
+    <table class="sizetable">
+      <thead><tr><th>Size</th><th>Bust</th><th>Waist</th><th>Hip</th><th>Length</th></tr></thead>
+      <tbody>${rows}</tbody>
+    </table>
+    <div class="measure">
+      <b>How to measure</b>
+      <ul>
+        <li><b style="color:var(--ink)">Bust</b> — around the fullest part, tape level, arms down.</li>
+        <li><b style="color:var(--ink)">Waist</b> — the narrowest point, usually just above the navel.</li>
+        <li><b style="color:var(--ink)">Hip</b> — around the fullest part, roughly 8 inches below the waist.</li>
+        <li><b style="color:var(--ink)">Length</b> — shoulder seam straight down to the hem.</li>
+      </ul>
+      <p style="margin:0">Measure over light clothing, and keep the tape snug but not pulled tight.</p>
+    </div>
+    <h3>Between two sizes?</h3>
+    <p>Size up. Alterations of up to two inches are included free on every order — taking a garment in is straightforward, letting it out is not always possible.</p>
+    <h3>Still unsure</h3>
+    <p>Send us your measurements on WhatsApp and we will tell you which size to take. We would rather answer a message than process a return.</p>`;
+}
+
+const POLICIES = {
+  shipping: `
+    <h2 id="infoTitle">Shipping and delivery</h2>
+    <div class="kicker">LAST UPDATED SEPTEMBER 2026</div>
+    <h3>Dispatch</h3>
+    <p>Ready pieces are dispatched within 2 to 3 working days. Made-to-order and altered pieces take 7 to 10 working days, and we will tell you which applies before you pay.</p>
+    <h3>Delivery time</h3>
+    <ul>
+      <li>Metro cities — 2 to 4 working days after dispatch</li>
+      <li>Other cities and towns — 4 to 7 working days</li>
+      <li>Remote pincodes — up to 10 working days</li>
+    </ul>
+    <h3>Charges</h3>
+    <p>Delivery is ₹150 on orders below ₹5,000, and free above that. We ship across India only at present.</p>
+    <h3>Tracking</h3>
+    <p>You will receive a tracking number by WhatsApp and email once the parcel leaves us. If it has not moved in 48 hours, message us and we will chase the courier.</p>
+    <h3>Delays outside our control</h3>
+    <p>Festival periods, weather and courier strikes can add a few days. We will keep you informed rather than let you wonder.</p>`,
+
+  returns: `
+    <h2 id="infoTitle">Returns, exchanges and refunds</h2>
+    <div class="kicker">LAST UPDATED SEPTEMBER 2026</div>
+    <h3>The window</h3>
+    <p>You have 7 days from delivery to request a return or exchange. Message us on WhatsApp with your order number and we will arrange a reverse pickup at no cost to you.</p>
+    <h3>Condition</h3>
+    <p>Pieces must be unworn and unwashed, with tags attached and original packaging intact. We check on receipt.</p>
+    <h3>What cannot be returned</h3>
+    <ul>
+      <li>Altered or custom-made pieces, unless the fault is ours</li>
+      <li>Items marked final sale at the time of purchase</li>
+      <li>Anything showing wear, stains, or alteration done elsewhere</li>
+    </ul>
+    <h3>Refund timing</h3>
+    <p>Once the piece reaches us and passes inspection, refunds are issued to the original payment method within 5 to 7 working days. Your bank may take a further 2 to 4 days to show it.</p>
+    <h3>Exchanges</h3>
+    <p>Size exchanges are free, subject to that size still existing — our runs are small, so we cannot always promise it. If the size is gone, we refund instead.</p>
+    <h3>Damaged or wrong item</h3>
+    <p>Photograph it before removing tags and send it to us within 48 hours of delivery. We will replace it or refund you in full, including the delivery charge.</p>`,
+
+  terms: `
+    <h2 id="infoTitle">Terms of use</h2>
+    <div class="kicker">LAST UPDATED SEPTEMBER 2026</div>
+    <h3>Who we are</h3>
+    <p>House of Flora sells women's clothing online in India. Using this site means you accept these terms.</p>
+    <h3>Orders</h3>
+    <p>An order is an offer to buy. We confirm it once payment clears and stock is verified. Occasionally a piece sells out between your order and our confirmation — if that happens we refund you in full and tell you promptly.</p>
+    <h3>Pricing</h3>
+    <p>All prices are in Indian rupees and include applicable GST. We may change prices at any time, but never after you have paid.</p>
+    <h3>Colour and finish</h3>
+    <p>Several of our fabrics are naturally dyed or hand printed. Shade and print placement vary between pieces, and screens differ. Reasonable variation is a feature of the work, not a defect.</p>
+    <h3>Intellectual property</h3>
+    <p>Our prints, photographs, and written content belong to us. Please do not reproduce them commercially.</p>
+    <h3>Liability</h3>
+    <p>Our liability for any order is limited to the amount you paid for it.</p>
+    <h3>Governing law</h3>
+    <p>These terms are governed by Indian law, with jurisdiction in Odisha.</p>`,
+
+  privacy: `
+    <h2 id="infoTitle">Privacy policy</h2>
+    <div class="kicker">LAST UPDATED SEPTEMBER 2026</div>
+    <h3>What we collect</h3>
+    <p>Your name, delivery address, phone number and email, taken so we can fulfil your order. We also keep a record of what you bought.</p>
+    <h3>Payment details</h3>
+    <p>We never see or store your card details. Payments are handled entirely by Razorpay on their own systems.</p>
+    <h3>How we use it</h3>
+    <ul>
+      <li>Processing, packing and delivering your order</li>
+      <li>Answering your questions about it</li>
+      <li>Sending occasional updates, only if you asked for them</li>
+    </ul>
+    <h3>Who we share it with</h3>
+    <p>Only the people who need it to get your parcel to you — our courier partner and our payment gateway. We do not sell your data to anyone, for any reason.</p>
+    <h3>Stored in your browser</h3>
+    <p>Your bag and saved pieces are kept in your own browser's local storage, not on our servers. Clearing your browser data clears them.</p>
+    <h3>Your rights</h3>
+    <p>Message us and we will tell you what we hold about you, correct it, or delete it. Order records we are legally required to keep are the one exception.</p>`
+};
+
+function openInfo(kind, sizeTab){
+  const html = kind === "size" ? sizeGuideHtml(sizeTab) : POLICIES[kind];
+  if (!html) return;
+  $("#infoBody").innerHTML = html;
+  $("#infoBody").parentElement.parentElement.scrollTop = 0;
+  openPanel("#info");
+}
+
+/* ── overlays ──────────────────────────────────────── */
+let lastFocus = null;
+const FOCUSABLE = 'a[href],button:not([disabled]),input,select,textarea,[tabindex]:not([tabindex="-1"])';
+
+function closeAll(){
+  const wasOpen = $(".slideover.on") || $(".sheetmodal.on");
+  $$(".slideover").forEach(el => el.classList.remove("on"));
+  $$(".sheetmodal").forEach(el => { el.classList.remove("on"); el.setAttribute("aria-hidden","true"); });
+  $("#veil").classList.remove("on");
+  document.body.style.overflow = "";
+  if (wasOpen && lastFocus && document.contains(lastFocus)){
+    lastFocus.focus();
+    lastFocus = null;
+  }
+}
+
+function openPanel(sel){
+  const opener = document.activeElement;
+  closeAll();
+  lastFocus = opener && opener !== document.body ? opener : null;
+
+  const el = $(sel);
+  el.classList.add("on");
+  if (el.classList.contains("sheetmodal")) el.setAttribute("aria-hidden","false");
+  $("#veil").classList.add("on");
+  document.body.style.overflow = "hidden";
+
+  const first = el.querySelector(FOCUSABLE);
+  if (first) requestAnimationFrame(() => first.focus());
+}
+
+/* Keep Tab inside whichever overlay is open */
+function trapFocus(e){
+  if (e.key !== "Tab") return;
+  const panel = $(".slideover.on") || $(".sheetmodal.on");
+  if (!panel) return;
+  const items = [...panel.querySelectorAll(FOCUSABLE)].filter(n => n.offsetParent !== null);
+  if (!items.length) return;
+  const first = items[0], last = items[items.length - 1];
+  if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+  else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+}
+
+/* ── mobile filter drawer ──────────────────────────── */
+function openFilterDrawer(){
+  store.draft = {
+    cat: store.cat, sort: store.sort, min: store.min, max: store.max,
+    sizes: [...store.sizes], colours: [...store.colours]
+  };
+  paintFilterDrawer();
+  openPanel("#filterPanel");
+}
+
+function paintFilterDrawer(){
+  const d = store.draft;
+  const lo = d.min ?? PRICE_FLOOR, hi = d.max ?? PRICE_CEIL;
+  $("#filterBody").innerHTML = `
+    <div class="panel" style="border:0;padding:0;background:none;margin-bottom:22px">
+      <div class="panel-top"><b>Shape</b></div>
+      <div class="opts">
+        ${["All", ...CATEGORIES.map(c=>c.name)].map(c =>
+          `<button class="opt ${d.cat===c?"on":""}" data-d-cat="${c}">${c==="All"?"Everything":c}</button>`).join("")}
+      </div>
+    </div>
+    <div class="panel" style="border:0;padding:0;background:none;margin-bottom:22px">
+      <div class="panel-top"><b>Price</b><span>${rupees(lo)} – ${rupees(hi)}</span></div>
+      <div class="opts">
+        ${[[0,5000],[5000,10000],[10000,15000],[15000,PRICE_CEIL]].map(([a,b]) =>
+          `<button class="opt ${d.min===a&&d.max===b?"on":""}" data-d-band="${a},${b}">${rupees(a)} – ${rupees(b)}</button>`).join("")}
+        <button class="opt ${d.min===null&&d.max===null?"on":""}" data-d-band="any">Any price</button>
+      </div>
+    </div>
+    <div class="panel" style="border:0;padding:0;background:none;margin-bottom:22px">
+      <div class="panel-top"><b>Size</b></div>
+      <div class="opts">
+        ${ALL_SIZES.map(s => `<button class="opt ${d.sizes.includes(s)?"on":""}" data-d-size="${s}">${s}</button>`).join("")}
+      </div>
+    </div>
+    <div class="panel" style="border:0;padding:0;background:none;margin-bottom:22px">
+      <div class="panel-top"><b>Colour</b></div>
+      <div class="opts">
+        ${ALL_COLOURS.map(c => `<button class="opt colour ${d.colours.includes(c)?"on":""}" data-d-colour="${c}"><span class="dot" style="background:${hex(c)}"></span>${c}</button>`).join("")}
+      </div>
+    </div>
+    <div class="panel" style="border:0;padding:0;background:none">
+      <div class="panel-top"><b>Sort by</b></div>
+      <div class="opts">
+        ${[["featured","Curated"],["new","Newest"],["price-asc","Price up"],["price-desc","Price down"],["name","A to Z"]]
+          .map(([v,l]) => `<button class="opt ${d.sort===v?"on":""}" data-d-sort="${v}">${l}</button>`).join("")}
+      </div>
+    </div>`;
+}
+
+/* ── checkout ──────────────────────────────────────── */
+function bagAsText(){
+  const t = bagTotals();
+  const lines = store.bag.map(l => {
+    const p = byId(l.id);
+    return `• ${p.name} (${p.sku}) — ${l.colour}, size ${l.size} × ${l.qty} — ${rupees(p.price * l.qty)}`;
+  }).join("\n");
+  return `Hello ${CONFIG.brand}, I would like to order:\n\n${lines}\n\nTotal: ${rupees(t.total)}`;
+}
+
+function openCheckout(){
+  if (!store.bag.length){ toast("Your bag is empty"); return; }
+  const t = bagTotals();
+
+  $("#recap").innerHTML =
+    store.bag.map(l => {
+      const p = byId(l.id);
+      return p ? `<div><span>${p.name} · ${l.colour} · ${l.size} × ${l.qty}</span><span>${rupees(p.price * l.qty)}</span></div>` : "";
+    }).join("")
+    + (t.discount ? `<div><span>${t.couponLabel}</span><span>− ${rupees(t.discount)}</span></div>` : "")
+    + `<div><span>Delivery</span><span>${t.shipping ? rupees(t.shipping) : "Free"}</span></div>`
+    + `<div class="tot"><span>Total</span><span>${rupees(t.total)}</span></div>`;
+
+  $("#payNote").textContent = CONFIG.paymentsLive
+    ? `You will pay ${rupees(t.total)} on the next screen. Cards, UPI and netbanking accepted.`
+    : `Online payment is not switched on yet for this build. Use the WhatsApp option below and we will send you a payment link. Order total: ${rupees(t.total)}.`;
+  $("#payBtn").disabled = !CONFIG.paymentsLive;
+  openPanel("#checkout");
+}
+
+async function startPayment(customer){
+  const t = bagTotals();
+
+  // A live store creates the order server side, where prices are
+  // recalculated from the database. Never send an amount from here.
+  if (!CONFIG.apiBase || !CONFIG.razorpayKeyId){
+    toast("Payment is not configured yet");
+    return;
+  }
+
+  try {
+    const res = await fetch(`${CONFIG.apiBase}/api/orders`, {
+      method:"POST",
+      headers:{ "Content-Type":"application/json" },
+      body: JSON.stringify({
+        items: store.bag.map(l => ({ product_id:l.id, size:l.size, colour:l.colour, quantity:l.qty })),
+        coupon: store.coupon,
+        customer
+      })
+    });
+    if (!res.ok) throw new Error(`Order failed (${res.status})`);
+    const data = await res.json();
+
+    const rz = new Razorpay({
+      key: CONFIG.razorpayKeyId,
+      order_id: data.razorpay_order_id,
+      amount: data.amount,
+      currency: "INR",
+      name: CONFIG.brand,
+      description: `Order ${data.order_number}`,
+      prefill: {
+        name: `${customer.firstName} ${customer.lastName}`,
+        email: customer.email,
+        contact: customer.phone
+      },
+      theme: { color:"#2b3a2a" },
+      handler: async payload => {
+        await fetch(`${CONFIG.apiBase}/api/payments/verify`, {
+          method:"POST",
+          headers:{ "Content-Type":"application/json" },
+          body: JSON.stringify(payload)
+        });
+        store.bag = [];
+        persist();
+        closeAll();
+        toast(`Order ${data.order_number} confirmed`);
+      }
+    });
+    rz.open();
+  } catch (err){
+    toast(err.message || "Could not start payment");
+  }
+}
+
+/* ── events ────────────────────────────────────────── */
+function wireEvents(){
+
+  // header
+  $("#menuBtn").addEventListener("click", () => {
+    const nav = $("#dropNav"), open = nav.classList.toggle("open");
+    $("#menuBtn").setAttribute("aria-expanded", String(open));
+  });
+  $("#bagBtn").addEventListener("click",  () => { paintBag();  openPanel("#bagPanel"); });
+  $("#wishBtn").addEventListener("click", () => { paintWish(); openPanel("#wishPanel"); });
+  $("#dropWish").addEventListener("click",() => { paintWish(); openPanel("#wishPanel"); });
+  $("#bagClose").addEventListener("click", closeAll);
+  $("#wishClose").addEventListener("click", closeAll);
+  $("#filterClose").addEventListener("click", closeAll);
+  $("#pdpClose").addEventListener("click", closeAll);
+  $("#checkoutClose").addEventListener("click", closeAll);
+  $("#veil").addEventListener("click", closeAll);
+
+  document.addEventListener("keydown", e => {
+    trapFocus(e);
+    if (e.key === "Escape") closeAll();
+    if ($("#pdp").classList.contains("on")){
+      if (e.key === "ArrowLeft")  stepGallery(-1);
+      if (e.key === "ArrowRight") stepGallery(1);
+    }
+  });
+
+  // search (debounced, replaceState so history isn't flooded)
+  let qTimer;
+  $("#q").addEventListener("input", e => {
+    store.q = e.target.value;
+    clearTimeout(qTimer);
+    qTimer = setTimeout(() => commit(false), 220);
+  });
+
+  $("#sort").addEventListener("change", e => { store.sort = e.target.value; commit(true); });
+
+  // category pills, rail, footer links
+  document.addEventListener("click", e => {
+    const catEl = e.target.closest("[data-cat]");
+    if (catEl){
+      e.preventDefault();
+      store.cat = catEl.dataset.cat;
+      commit(true);
+      $("#shop").scrollIntoView({ behavior:"smooth" });
+      $("#dropNav").classList.remove("open");
+    }
+  });
+
+  $("#railReset").addEventListener("click", clearEverything);
+  $("#clearAll").addEventListener("click", clearEverything);
+  $("#chipClear").addEventListener("click", clearEverything);
+  $("#seeAll").addEventListener("click", () => $("#shop").scrollIntoView({ behavior:"smooth" }));
+
+  // size / colour panels
+  $("#sizeOpts").addEventListener("click", e => {
+    const b = e.target.closest("[data-size]"); if (!b) return;
+    toggleIn(store.sizes, b.dataset.size); commit(true);
+  });
+  $("#colourOpts").addEventListener("click", e => {
+    const b = e.target.closest("[data-colour]"); if (!b) return;
+    toggleIn(store.colours, b.dataset.colour); commit(true);
+  });
+  $("#clearPrice").addEventListener("click", () => { store.min = null; store.max = null; commit(true); });
+
+  // dual-handle slider
+  const a = $("#pMin"), b = $("#pMax");
+  const slide = () => {
+    let lo = +a.value, hi = +b.value;
+    if (lo > hi) { [lo, hi] = [hi, lo]; }
+    store.min = lo === PRICE_FLOOR ? null : lo;
+    store.max = hi === PRICE_CEIL  ? null : hi;
+    paintSlider();
+    store.shown = store.pageSize;
+    paintGrid();
+  };
+  a.addEventListener("input", slide);
+  b.addEventListener("input", slide);
+  a.addEventListener("change", () => stateToUrl(false));
+  b.addEventListener("change", () => stateToUrl(false));
+
+  // active filter chips
+  $("#chipHost").addEventListener("click", e => {
+    const chip = e.target.closest("[data-drop]"); if (!chip) return;
+    const { drop, value } = chip.dataset;
+    if (drop === "cat")    store.cat = "All";
+    if (drop === "price") { store.min = null; store.max = null; }
+    if (drop === "size")   store.sizes   = store.sizes.filter(s => s !== value);
+    if (drop === "colour") store.colours = store.colours.filter(c => c !== value);
+    commit(true);
+  });
+
+  // grid: open + wishlist
+  document.addEventListener("click", e => {
+    const fav = e.target.closest("[data-wish]");
+    if (fav){
+      e.stopPropagation();
+      toggleIn(store.wish, fav.dataset.wish);
+      persist();
+      paintGrid(); paintFresh(); paintWish();
+      toast(store.wish.includes(fav.dataset.wish) ? "Saved" : "Removed from saved");
+      return;
+    }
+    const open = e.target.closest("[data-open]");
+    if (open) openPdp(open.dataset.open);
+  });
+
+  // load more + infinite scroll
+  $("#loadMore").addEventListener("click", () => { store.shown += store.pageSize; paintGrid(); });
+  if ("IntersectionObserver" in window){
+    new IntersectionObserver(entries => {
+      if (entries[0].isIntersecting && !$("#more").hidden){
+        store.shown += store.pageSize;
+        paintGrid();
+      }
+    }, { rootMargin:"300px" }).observe($("#sentinel"));
+  }
+
+  // pdp
+  $("#galPrev").addEventListener("click", () => stepGallery(-1));
+  $("#galNext").addEventListener("click", () => stepGallery(1));
+  $("#galDots").addEventListener("click", e => {
+    const d = e.target.closest("[data-gal]"); if (!d) return;
+    store.galIndex = +d.dataset.gal; paintGallery();
+  });
+  $("#pdpColours").addEventListener("click", e => {
+    const c = e.target.closest("[data-pick-colour]"); if (!c) return;
+    store.pickedColour = c.dataset.pickColour; paintPdpOptions();
+  });
+  $("#pdpSizes").addEventListener("click", e => {
+    const s = e.target.closest("[data-pick-size]"); if (!s) return;
+    store.pickedSize = s.dataset.pickSize; paintPdpOptions();
+  });
+  $("#pdpAdd").addEventListener("click", () => {
+    if (!store.pickedSize){ toast("Choose a size first"); return; }
+    addToBag(store.current, store.pickedSize, store.pickedColour);
+    toast(`${store.current.name} added to your bag`);
+    openPanel("#bagPanel");
+  });
+  // info modal: size guide + policies
+  $("#infoClose").addEventListener("click", closeAll);
+  document.addEventListener("click", e => {
+    const link = e.target.closest("[data-info]");
+    if (!link) return;
+    e.preventDefault();
+    const tab = store.current ? store.current.category : null;
+    openInfo(link.dataset.info, tab);
+  });
+  $("#infoBody").addEventListener("click", e => {
+    const tab = e.target.closest("[data-size-tab]");
+    if (tab) openInfo("size", tab.dataset.sizeTab);
+  });
+
+  // bag interactions
+  $("#bagBody").addEventListener("click", e => {
+    const step = e.target.closest("[data-step]");
+    if (step){
+      const line = store.bag.find(l => l.key === step.dataset.key);
+      if (line){
+        line.qty += +step.dataset.step;
+        if (line.qty < 1) store.bag = store.bag.filter(l => l.key !== line.key);
+        persist(); paintBag();
+      }
+      return;
+    }
+    const rm = e.target.closest("[data-remove]");
+    if (rm){
+      store.bag = store.bag.filter(l => l.key !== rm.dataset.remove);
+      persist(); paintBag(); toast("Removed from bag");
+    }
+  });
+
+  $("#bagFoot").addEventListener("click", e => {
+    if (e.target.id === "couponApply"){
+      const code = $("#couponInput").value.trim().toUpperCase();
+      const c = COUPONS[code];
+      if (!c){ toast("That code is not valid"); return; }
+      const { sub } = bagTotals();
+      if (sub < c.min){ toast(`This code needs a subtotal of ${rupees(c.min)}`); return; }
+      store.coupon = code; persist(); paintBag(); toast(`${c.label} applied`);
+    }
+    if (e.target.id === "toCheckout") openCheckout();
+    if (e.target.id === "bagWa") window.open(wa(bagAsText()), "_blank");
+  });
+
+  $("#wishBody").addEventListener("click", e => {
+    const open = e.target.closest("[data-open]");
+    if (open){ openPdp(open.dataset.open); }
+  });
+
+  // mobile filter drawer
+  $("#openFilters").addEventListener("click", openFilterDrawer);
+  $("#filterBody").addEventListener("click", e => {
+    const d = store.draft; if (!d) return;
+    const t = e.target.closest("button"); if (!t) return;
+    const ds = t.dataset;
+
+    if (ds.dCat)    d.cat  = ds.dCat;
+    if (ds.dSort)   d.sort = ds.dSort;
+    if (ds.dSize)   toggleIn(d.sizes, ds.dSize);
+    if (ds.dColour) toggleIn(d.colours, ds.dColour);
+    if (ds.dBand){
+      if (ds.dBand === "any"){ d.min = null; d.max = null; }
+      else { const [a,b] = ds.dBand.split(",").map(Number); d.min = a; d.max = b; }
+    }
+    paintFilterDrawer();
+  });
+  $("#applyFilters").addEventListener("click", () => {
+    Object.assign(store, store.draft);
+    store.sizes = [...store.draft.sizes];
+    store.colours = [...store.draft.colours];
+    $("#sort").value = store.sort;
+    commit(true);
+    closeAll();
+  });
+  $("#resetFilters").addEventListener("click", () => {
+    store.draft = { cat:"All", sort:"featured", min:null, max:null, sizes:[], colours:[] };
+    paintFilterDrawer();
+  });
+
+  // checkout
+  $("#checkoutForm").addEventListener("submit", e => {
+    e.preventDefault();
+    const f = e.target;
+    if (!f.checkValidity()){ toast("Please complete the required fields"); return; }
+    if (!/^\d{6}$/.test($("#cPin").value)){ toast("Pincode should be 6 digits"); return; }
+    startPayment({
+      firstName: $("#cFirst").value, lastName: $("#cLast").value,
+      phone: $("#cPhone").value, email: $("#cEmail").value,
+      address: $("#cAddr").value, city: $("#cCity").value,
+      pincode: $("#cPin").value, note: $("#cNote").value
+    });
+  });
+  $("#waOrderBtn").addEventListener("click", () => {
+    window.open(wa(bagAsText()), "_blank");
+    closeAll();
+    toast("Order sent. We will confirm on WhatsApp and send a payment link.");
+  });
+
+  // back / forward
+  window.addEventListener("popstate", () => {
+    urlToState();
+    $("#q").value = store.q;
+    $("#sort").value = store.sort;
+    paintCatbar(); paintPanels(); paintGrid();
+  });
+}
+
+/* ── structured data for the catalogue ─────────────── */
+function injectProductSchema(){
+  const graph = PRODUCTS.map(p => ({
+    "@type":"Product",
+    name: p.name,
+    sku: p.sku,
+    description: p.sub,
+    image: p.images[0],
+    material: p.fabric,
+    brand: { "@type":"Brand", name: CONFIG.brand },
+    offers: {
+      "@type":"Offer",
+      price: p.price,
+      priceCurrency: "INR",
+      availability: p.stock > 0
+        ? "https://schema.org/InStock"
+        : "https://schema.org/OutOfStock"
+    }
+  }));
+  const tag = document.createElement("script");
+  tag.type = "application/ld+json";
+  tag.textContent = JSON.stringify({ "@context":"https://schema.org", "@graph": graph });
+  document.head.appendChild(tag);
+}
+
+/* ── boot ──────────────────────────────────────────── */
+function start(){
+  $("#heroImg").src    = SITE_IMAGES.hero;
+  $("#fieldImg").src   = SITE_IMAGES.story;
+  $("#atelierImg").src = SITE_IMAGES.workroom;
+
+  urlToState();
+  $("#q").value = store.q;
+  $("#sort").value = store.sort;
+
+  wireWhatsapp();
+  paintRail();
+  paintCatbar();
+  paintPanels();
+  paintGrid();
+  paintFresh();
+  paintTallies();
+  wireEvents();
+  injectProductSchema();
+}
+
+start();
+</script>
+</body>
+</html>
