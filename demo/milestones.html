@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#a9bfa6">
+<title>House of Flora — Build Roadmap &amp; Milestones</title>
+<meta name="description" content="Staged build roadmap for houseofflora.store — four milestones with live demo links for each.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f2f0e9; --sheet:#fdfcf8; --sage:#a9bfa6; --sage-pale:#c8d6c4; --sage-deep:#5f7a5c;
+    --ink:#2b3a2a; --ink-soft:#63705f; --blush:#d99b90; --blush-pale:#f0d9d4;
+    --wood:#8b5e3c; --rule:#d8ddd2;
+    --display:"Bodoni Moda",Georgia,serif; --ui:"Jost",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);font-weight:300;-webkit-font-smoothing:antialiased;line-height:1.6}
+  .wrap{max-width:1100px;margin:auto;padding:0 clamp(20px,4vw,48px)}
+  header{background:var(--sheet);border-bottom:1px solid var(--rule);padding:48px 0 40px}
+  .brand{font-family:var(--display);font-size:14px;letter-spacing:.34em;text-transform:uppercase;color:var(--sage-deep);margin:0 0 20px}
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(36px,5vw,56px);line-height:1.05;margin:0 0 16px;letter-spacing:-.01em}
+  .lede{color:var(--ink-soft);max-width:62ch;margin:0;font-size:16px}
+  .meta{display:flex;gap:28px;flex-wrap:wrap;margin-top:28px;padding-top:24px;border-top:1px solid var(--rule);font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+  .meta b{color:var(--ink);font-weight:500}
+
+  .roadmap{padding:56px 0 80px}
+  .intro-block{background:var(--sheet);border-left:3px solid var(--sage);padding:22px 28px;margin-bottom:48px;font-size:15px;color:var(--ink-soft)}
+  .intro-block strong{color:var(--ink);font-weight:500}
+
+  .stage{display:grid;grid-template-columns:150px 1fr;gap:34px;padding:36px 0;border-top:1px solid var(--rule);position:relative}
+  .stage:first-of-type{border-top:1px solid var(--ink)}
+  .stage:last-of-type{border-bottom:1px solid var(--ink)}
+  .marker{text-align:left}
+  .marker .num{font-family:var(--display);font-size:52px;line-height:1;color:var(--sage-deep)}
+  .marker .label{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-top:6px}
+  .content h2{font-family:var(--display);font-weight:400;font-size:28px;line-height:1.15;margin:0 0 4px}
+  .content .tagline{color:var(--ink-soft);font-style:italic;margin:0 0 18px;font-size:14px}
+
+  .status{display:inline-flex;align-items:center;gap:6px;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;padding:4px 10px;border-radius:12px;margin-bottom:16px}
+  .status.done{background:var(--sage-pale);color:var(--sage-deep)}
+  .status.next{background:var(--blush-pale);color:#9c4e42}
+  .status.ready{background:#efe4d1;color:#8a6a2b}
+  .status.future{background:#ececec;color:#555}
+  .status i{width:6px;height:6px;border-radius:50%;background:currentColor}
+
+  .what{margin:0 0 14px}
+  .feats{list-style:none;padding:0;margin:0 0 18px;display:grid;grid-template-columns:1fr 1fr;gap:4px 20px;font-size:14px}
+  .feats li{position:relative;padding-left:16px;color:var(--ink-soft)}
+  .feats li:before{content:"✿";position:absolute;left:0;color:var(--sage);font-size:11px;top:3px}
+
+  .pricebar{display:flex;flex-wrap:wrap;gap:28px;padding:14px 0;border-top:1px dashed var(--rule);border-bottom:1px dashed var(--rule);margin:18px 0;font-size:13px}
+  .pricebar div span{display:block;font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:3px}
+  .pricebar div b{font-family:var(--display);font-size:18px;font-weight:400;color:var(--ink)}
+
+  .cta-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 20px;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:500;text-decoration:none;border:1px solid var(--ink);transition:all .2s}
+  .btn.primary{background:var(--ink);color:var(--sheet)}
+  .btn.primary:hover{background:var(--sage-deep);border-color:var(--sage-deep)}
+  .btn.ghost{color:var(--ink);background:transparent}
+  .btn.ghost:hover{background:var(--ink);color:var(--sheet)}
+  .btn.disabled{opacity:.4;cursor:not-allowed;pointer-events:none}
+
+  .depends{margin-top:16px;font-size:12px;color:var(--ink-soft);font-style:italic}
+  .depends b{color:var(--blush);font-style:normal;font-weight:500}
+
+  footer{background:var(--ink);color:var(--sheet);padding:38px 0;text-align:center}
+  footer .brand{color:var(--sage-pale);margin-bottom:8px}
+  footer p{margin:0;font-size:12px;opacity:.7}
+
+  @media (max-width:760px){
+    .stage{grid-template-columns:1fr;gap:14px}
+    .marker{display:flex;align-items:baseline;gap:14px}
+    .marker .num{font-size:36px}
+    .feats{grid-template-columns:1fr}
+    header{padding:36px 0 28px}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <p class="brand">House of Flora · Build Roadmap</p>
+    <h1>From a boutique landing page to a storefront that competes with Shopify.</h1>
+    <p class="lede">A four-stage build, each stage shippable on its own and each one adding real revenue capability. You choose when to move forward — no stage locks you into the next.</p>
+    <div class="meta">
+      <div><b>Client</b> &nbsp; House of Flora, Janjgir</div>
+      <div><b>Build partner</b> &nbsp; Jyogi Systems</div>
+      <div><b>Reference</b> &nbsp; vastraofficial.in</div>
+      <div><b>Updated</b> &nbsp; 01 Oct 2026</div>
+    </div>
+  </div>
+</header>
+
+<section class="roadmap">
+  <div class="wrap">
+
+    <div class="intro-block">
+      <strong>How to read this.</strong> Each stage is a working website. You can stop at any stage and the site keeps earning. The link under each stage opens the actual HTML — not a mockup, the real page as it would look live. Prices shown are the one-time build cost for that stage; monthly running costs are listed separately where they apply.
+    </div>
+
+    <!-- STAGE 0 -->
+    <article class="stage">
+      <div class="marker">
+        <div class="num">01</div>
+        <div class="label">Stage 0 · Live</div>
+      </div>
+      <div class="content">
+        <h2>The Boutique Landing Page</h2>
+        <p class="tagline">Where House of Flora is right now — the first chapter.</p>
+        <div class="status done"><i></i>Live &amp; deployed</div>
+        <p class="what">A one-page introduction to the boutique — brand, story, location, WhatsApp. Everything a first-time visitor needs to decide to visit the shop or send a message. It's SEO-complete and shows up properly when the link is shared.</p>
+        <ul class="feats">
+          <li>Hero, story &amp; visit sections</li>
+          <li>WhatsApp direct message buttons</li>
+          <li>Google Maps address link</li>
+          <li>Instagram link</li>
+          <li>Structured data for Google</li>
+          <li>robots.txt, sitemap.xml, llms.txt</li>
+          <li>Mobile-optimised</li>
+          <li>WhatsApp preview card</li>
+        </ul>
+        <div class="pricebar">
+          <div><span>Build cost</span><b>₹21,880</b></div>
+          <div><span>Monthly cost</span><b>₹0</b></div>
+          <div><span>Takes orders?</span><b>Via WhatsApp</b></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="https://houseofflora.store" target="_blank" rel="noopener">View live site →</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- STAGE A2 -->
+    <article class="stage">
+      <div class="marker">
+        <div class="num">02</div>
+        <div class="label">Stage A2 · Next up</div>
+      </div>
+      <div class="content">
+        <h2>The Catalogue Page</h2>
+        <p class="tagline">Products visible, orders on WhatsApp — no cart, no payments, no new fear.</p>
+        <div class="status next"><i></i>Recommended next step</div>
+        <p class="what">The in-between stage designed for exactly where you are now: you want your clothes online for people to see, but you aren't ready to manage online stock, payments, and returns yet. Every product has a photo, price, size options, and an <strong>Enquire on WhatsApp</strong> button that opens a pre-filled message. You keep selling the way you already sell — just with your whole collection visible online.</p>
+        <ul class="feats">
+          <li>Product grid with filters</li>
+          <li>Product details &amp; photos</li>
+          <li>Size &amp; colour options shown</li>
+          <li>Pre-filled WhatsApp enquiry</li>
+          <li>Filter by category / fabric</li>
+          <li>Shareable product links</li>
+          <li>No cart to manage</li>
+          <li>No stock reservations to break</li>
+        </ul>
+        <div class="pricebar">
+          <div><span>Build cost</span><b>₹35,000</b></div>
+          <div><span>Monthly cost</span><b>₹0</b></div>
+          <div><span>Takes orders?</span><b>Via WhatsApp (pre-filled)</b></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="./stage-a2.html" target="_blank">Open the demo →</a>
+        </div>
+        <p class="depends">Needs from you: <b>product photos</b> (per the photography brief) and a product spreadsheet (name, fabric, price, sizes, colours).</p>
+      </div>
+    </article>
+
+    <!-- STAGE B -->
+    <article class="stage">
+      <div class="marker">
+        <div class="num">03</div>
+        <div class="label">Stage B · Built</div>
+      </div>
+      <div class="content">
+        <h2>The Full Store</h2>
+        <p class="tagline">Add to cart, choose size, pay online, done. The Shopify-equivalent experience.</p>
+        <div class="status ready"><i></i>Code built, awaiting photos &amp; KYC</div>
+        <p class="what">This is where House of Flora stands next to vastraofficial.in. Customers can browse by fabric, occasion, or design; add things to a cart; apply coupons; and check out with UPI, cards, or Cash on Delivery. The code is already written and sits in your repo — what's left is real product photos and Razorpay KYC approval. No platform rent, no app subscriptions.</p>
+        <ul class="feats">
+          <li>Shopping cart &amp; wishlist</li>
+          <li>Filter: fabric × occasion × design</li>
+          <li>Size, colour, price filters</li>
+          <li>Search &amp; sort</li>
+          <li>Razorpay checkout (UPI / cards)</li>
+          <li>Cash on Delivery option</li>
+          <li>Coupons &amp; discounts</li>
+          <li>Size chart &amp; policies</li>
+          <li>Order confirmations</li>
+          <li>Mobile-first design</li>
+        </ul>
+        <div class="pricebar">
+          <div><span>Build cost</span><b>₹1,05,000</b></div>
+          <div><span>Monthly cost</span><b>₹4,500 Care Plan</b></div>
+          <div><span>Shopify alternative</span><b>₹8,500–12,500 / mo forever</b></div>
+        </div>
+        <div class="cta-row">
+          <a class="btn primary" href="../index_later.html" target="_blank">Open the demo →</a>
+        </div>
+        <p class="depends">Needs: <b>Razorpay KYC</b> (2–4 days), <b>product photos</b>, <b>backend deployment</b> on Render.</p>
+      </div>
+    </article>
+
+    <!-- STAGE C -->
+    <article class="stage">
+      <div class="marker">
+        <div class="num">04</div>
+        <div class="label">Stage C · Future</div>
+      </div>
+      <div class="content">
+        <h2>Margin Protection</h2>
+        <p class="tagline">The stage where the store starts defending its own profit — not just taking orders.</p>
+        <div class="status future"><i></i>Phase 2 of 2027</div>
+        <p class="what">Once Stage B is running and you have a few months of real orders, this is where the website starts earning its keep differently — reducing returns, flagging risky COD orders before they ship, and converting returns to exchanges automatically. These are the problems Shopify apps charge ₹2,000–5,000 per month, each, to try to solve.</p>
+        <ul class="feats">
+          <li>Per-garment size &amp; fit guidance</li>
+          <li>Model-worn size on each product</li>
+          <li>COD risk scoring at checkout</li>
+          <li>Exchange-first returns flow</li>
+          <li>Return reason codes &amp; stock re-entry</li>
+          <li>Repeat customer tagging</li>
+          <li>Shiprocket integration</li>
+          <li>Email order updates</li>
+        </ul>
+        <div class="pricebar">
+          <div><span>Build cost</span><b>₹55,000–75,000</b></div>
+          <div><span>Monthly cost</span><b>Same ₹4,500</b></div>
+          <div><span>Trigger</span><b>&gt;30 orders / month</b></div>
+        </div>
+        <div class="cta-row">
+          <span class="btn ghost disabled">Demo at Stage B+</span>
+        </div>
+        <p class="depends">Needs: a few months of Stage B data to design the risk model from.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p class="brand">House of Flora × Jyogi Systems</p>
+    <p>Four stages, one site, no platform rent. Updated 01 October 2026.</p>
+  </div>
+</footer>
+
+</body>
+</html>

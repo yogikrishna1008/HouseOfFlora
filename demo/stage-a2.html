@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#a9bfa6">
+<title>House of Flora — Collection</title>
+<meta name="description" content="Browse the House of Flora collection — sarees, suits, lehengas and fusion wear. Enquire on WhatsApp.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400;6..96,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#f2f0e9; --sheet:#fdfcf8; --sage:#a9bfa6; --sage-pale:#c8d6c4; --sage-deep:#5f7a5c;
+    --ink:#2b3a2a; --ink-soft:#63705f; --blush:#d99b90; --blush-pale:#f0d9d4;
+    --rule:#d8ddd2; --wa:#25d366;
+    --display:"Bodoni Moda",Georgia,serif; --ui:"Jost",Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--ui);font-weight:300;-webkit-font-smoothing:antialiased}
+  img{display:block;width:100%}
+  a{color:inherit;text-decoration:none}
+  button{font:inherit;color:inherit;cursor:pointer;border:0;background:transparent}
+
+  .demo-banner{background:var(--blush-pale);color:#8a3f33;text-align:center;padding:9px 14px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;border-bottom:1px solid var(--blush-pale)}
+  .demo-banner b{font-weight:500}
+
+  header.site{position:sticky;top:0;z-index:30;background:var(--paper);border-bottom:1px solid var(--rule)}
+  .site-in{display:flex;align-items:center;justify-content:space-between;padding:16px clamp(18px,4vw,48px);max-width:1180px;margin:auto}
+  .brand{font-family:var(--display);font-size:14px;letter-spacing:.32em;text-transform:uppercase}
+  .site-nav{display:flex;gap:22px;font-size:12px;letter-spacing:.1em;text-transform:uppercase}
+  .site-nav a{padding:4px 0;border-bottom:1px solid transparent;transition:border-color .2s}
+  .site-nav a:hover{border-color:var(--ink)}
+  .wa-link{display:inline-flex;align-items:center;gap:7px;background:var(--ink);color:var(--sheet);padding:9px 16px;border-radius:2px;font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+  .wa-link svg{width:14px;height:14px;fill:currentColor}
+  @media(max-width:720px){.site-nav{display:none}}
+
+  .page-intro{padding:46px clamp(18px,4vw,48px) 20px;max-width:1180px;margin:auto}
+  .eyebrow{font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--sage-deep);margin:0 0 12px}
+  h1{font-family:var(--display);font-weight:400;font-size:clamp(34px,4.6vw,52px);line-height:1.05;margin:0 0 14px;letter-spacing:-.01em}
+  .page-lede{color:var(--ink-soft);max-width:60ch;margin:0;line-height:1.65;font-size:15px}
+
+  .toolbar{max-width:1180px;margin:34px auto 20px;padding:0 clamp(18px,4vw,48px);display:flex;flex-wrap:wrap;gap:10px;align-items:center;border-top:1px solid var(--rule);padding-top:22px}
+  .toolbar .label{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-right:4px}
+  .chip{padding:8px 14px;background:var(--sheet);border:1px solid var(--rule);font-size:12px;letter-spacing:.04em;transition:all .18s;cursor:pointer}
+  .chip:hover{border-color:var(--ink)}
+  .chip.on{background:var(--ink);color:var(--sheet);border-color:var(--ink)}
+  .count{margin-left:auto;font-size:12px;color:var(--ink-soft)}
+
+  .grid{max-width:1180px;margin:0 auto;padding:14px clamp(18px,4vw,48px) 72px;display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:28px 22px}
+  .card{display:flex;flex-direction:column;background:var(--sheet);border:1px solid var(--rule);transition:transform .25s,box-shadow .25s}
+  .card:hover{transform:translateY(-3px);box-shadow:0 14px 30px rgba(43,58,42,.1)}
+  .card-img{position:relative;aspect-ratio:4/5;overflow:hidden;background:var(--sage-pale)}
+  .card-img img{height:100%;object-fit:cover;transition:transform .5s}
+  .card:hover .card-img img{transform:scale(1.04)}
+  .card-img .alt{position:absolute;inset:0;opacity:0;transition:opacity .35s,transform .5s}
+  .card:hover .card-img .alt{opacity:1}
+  .flag{position:absolute;top:10px;left:10px;background:var(--sheet);color:var(--ink);font-size:10px;letter-spacing:.12em;text-transform:uppercase;padding:4px 9px}
+  .flag.new{background:var(--sage);color:var(--sheet)}
+  .flag.occ{background:var(--blush);color:var(--sheet)}
+  .card-body{padding:18px 18px 20px;display:flex;flex-direction:column;flex:1}
+  .cat{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-soft);margin-bottom:6px}
+  .pname{font-family:var(--display);font-size:19px;line-height:1.2;margin:0 0 6px;font-weight:400}
+  .fabric{font-size:12px;color:var(--ink-soft);font-style:italic;margin:0 0 12px}
+  .price{font-family:var(--display);font-size:18px;color:var(--ink);margin:0 0 14px}
+  .meta-row{display:flex;flex-wrap:wrap;gap:4px;margin-bottom:16px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft)}
+  .meta-row .mi{padding:3px 7px;background:var(--paper);border:1px solid var(--rule)}
+  .ask{margin-top:auto;display:inline-flex;align-items:center;justify-content:center;gap:7px;background:var(--wa);color:#fff;padding:11px 14px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;border-radius:2px;transition:background .2s}
+  .ask:hover{background:#1ebb57}
+  .ask svg{width:13px;height:13px;fill:currentColor}
+
+  .empty{grid-column:1/-1;padding:40px;text-align:center;color:var(--ink-soft);font-style:italic}
+
+  footer.site{background:var(--ink);color:var(--sheet);padding:40px 0;text-align:center}
+  footer .brand{color:var(--sage-pale);letter-spacing:.3em;margin-bottom:8px;font-size:13px}
+  footer p{margin:0;font-size:12px;opacity:.65}
+
+  @media(max-width:520px){
+    .grid{grid-template-columns:repeat(2,1fr);gap:18px 12px}
+    .pname{font-size:16px}
+    .fabric{font-size:11px}
+    .card-body{padding:14px 12px 16px}
+  }
+</style>
+</head>
+<body>
+
+<div class="demo-banner">
+  <b>Preview catalogue</b> — Images are AI-generated previews; real photographs arrive once the shoot is complete. Prices and pieces are illustrative.
+</div>
+
+<header class="site">
+  <div class="site-in">
+    <a href="#" class="brand">House of Flora</a>
+    <nav class="site-nav">
+      <a href="#">Collection</a>
+      <a href="#">Our Story</a>
+      <a href="#">Visit</a>
+    </nav>
+    <a class="wa-link" href="https://wa.me/919993301897?text=Hello%20House%20of%20Flora%2C%20I%27d%20like%20to%20browse%20your%20collection." target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.597 20.13a9.858 9.858 0 005.457 1.566h.004c5.448 0 9.886-4.434 9.889-9.885a9.823 9.823 0 00-2.892-6.994A9.825 9.825 0 0012.057 1.9c-5.452 0-9.886 4.434-9.889 9.884a9.86 9.86 0 001.511 5.26l.235.373-1 3.648 3.683-.964z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+</header>
+
+<section class="page-intro">
+  <p class="eyebrow">Autumn / Winter 2026 · Janjgir</p>
+  <h1>The Collection, in bloom.</h1>
+  <p class="page-lede">Sarees, suits, lehengas and fusion wear — hand-picked for how they move, drape and feel. See a piece you like? Message us on WhatsApp with the name of the piece and we'll confirm availability, size, and bring it out for you to try.</p>
+</section>
+
+<div class="toolbar" id="filters">
+  <span class="label">Category</span>
+  <button class="chip on" data-filter="all">All</button>
+  <button class="chip" data-filter="Sarees">Sarees</button>
+  <button class="chip" data-filter="Suits">Suits &amp; Kurtis</button>
+  <button class="chip" data-filter="Co-ords">Co-ords</button>
+  <button class="chip" data-filter="Lehengas">Lehengas</button>
+  <button class="chip" data-filter="Fusion">Fusion</button>
+  <span class="count" id="count">12 pieces</span>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<footer class="site">
+  <p class="brand">HOUSE OF FLORA</p>
+  <p>Style That Blooms · Janjgir · Chhattisgarh</p>
+  <p style="margin-top:14px">© 2026 House of Flora · Website by Jyogi Systems</p>
+</footer>
+
+<script>
+  // Placeholder catalogue — real products replace this once photos arrive.
+  const WA = "919993301897";
+  const IMGDIR = "../images/shop/";
+  const GAL = {
+    "jasmine":["jasmine-saree-chalk","jasmine-saree-ash-rose","jasmine-saree-fern"],
+    "palash":["palash-saree-madder"],
+    "neem":["neem-shirt-dress-moss"],
+    "oleander":["oleander-kurta-fern","oleander-kurta-chalk","oleander-kurta-madder"],
+    "wild-iris":["wild-iris-anarkali-iris"],
+    "ashoka":["ashoka-kurta-chalk"],
+    "indigo":["indigo-fern-coord-indigo"],
+    "champa":["champa-coord-chalk"],
+    "amaltas":["amaltas-lehenga-marigold","amaltas-lehenga-madder","amaltas-lehenga-indigo"],
+    "marigold":["marigold-panelled-lehenga-marigold"],
+    "tuberose":["tuberose-dress-chalk"],
+    "kadamba":["kadamba-draped-dress-iris"]
+  };
+  const img = (id, n=0) => { const g = GAL[id]; return IMGDIR + g[Math.min(n, g.length-1)] + ".webp"; };
+  const products = [
+    { id:"jasmine",   name:"Jasmine Chanderi Saree",   cat:"Sarees",   fabric:"Chanderi silk cotton", price:"₹8,900",  flag:"new",  sizes:"Free size", colours:"Ivory · Fern · Ash Rose" },
+    { id:"palash",    name:"Palash Tussar Saree",      cat:"Sarees",   fabric:"Tussar silk",          price:"₹12,400", flag:"occ",  sizes:"Free size", colours:"Madder · Marigold" },
+    
+    { id:"oleander",  name:"Oleander Kurta Set",       cat:"Suits",    fabric:"Hand-block cotton mul",price:"₹5,400",  flag:"new",  sizes:"XS–XXL",    colours:"Fern · Chalk · Madder" },
+    { id:"wild-iris", name:"Wild Iris Anarkali",       cat:"Suits",    fabric:"Georgette with lining",price:"₹9,800",  flag:"",     sizes:"XS–XL",     colours:"Iris · Ink · Madder" },
+    { id:"ashoka",    name:"Ashoka Cotton Kurta",      cat:"Suits",    fabric:"Cotton voile",         price:"₹3,600",  flag:"",     sizes:"XS–XXL",    colours:"Chalk · Fern · Ink" },
+    { id:"indigo",    name:"Indigo Fern Co-ord",       cat:"Co-ords",  fabric:"Natural indigo cotton",price:"₹6,200",  flag:"new",  sizes:"XS–XXL",    colours:"Indigo · Ink" },
+    { id:"champa",    name:"Champa Linen Co-ord",      cat:"Co-ords",  fabric:"Linen blend",          price:"₹5,600",  flag:"",     sizes:"XS–XL",     colours:"Chalk · Moss · Clay" },
+    { id:"amaltas",   name:"Amaltas Silk Lehenga",     cat:"Lehengas", fabric:"Raw silk with zari",   price:"₹16,800", flag:"occ",  sizes:"XS–XL",     colours:"Marigold · Madder" },
+    { id:"marigold",  name:"Marigold Panel Lehenga",   cat:"Lehengas", fabric:"Silk organza",         price:"₹21,500", flag:"occ",  sizes:"XS–L",      colours:"Marigold · Ash Rose" },
+    { id:"tuberose",  name:"Tuberose Shirt Dress",     cat:"Fusion",   fabric:"Cotton poplin",        price:"₹4,900",  flag:"",     sizes:"XS–XXL",    colours:"Chalk · Clay · Moss" },
+    { id:"neem",      name:"Neem Shirt Dress",         cat:"Fusion",   fabric:"Handwoven khadi",      price:"₹4,200",  flag:"new",  sizes:"S–XXL",     colours:"Moss · Chalk · Indigo" },
+    { id:"kadamba",   name:"Kadamba Draped Dress",     cat:"Fusion",   fabric:"Modal satin",          price:"₹7,400",  flag:"",     sizes:"XS–XL",     colours:"Iris · Ink · Madder" }
+  ];
+
+  const grid = document.getElementById("grid");
+  const count = document.getElementById("count");
+
+  function waUrl(p){
+    const msg = `Hello House of Flora, I'd like to enquire about:\n\n*${p.name}* (${p.cat})\nPrice: ${p.price}\n\nPlease let me know about availability and size.`;
+    return `https://wa.me/${WA}?text=${encodeURIComponent(msg)}`;
+  }
+
+  function render(filter){
+    const list = filter==="all" ? products : products.filter(p => p.cat===filter);
+    grid.innerHTML = list.length ? list.map(p => `
+      <article class="card">
+        <div class="card-img">
+          ${p.flag==="new"?'<span class="flag new">New</span>':''}
+          ${p.flag==="occ"?'<span class="flag occ">Occasion</span>':''}
+          <img src="${img(p.id)}" alt="${p.name}" loading="lazy">
+          ${GAL[p.id].length>1?`<img class="alt" src="${img(p.id,1)}" alt="" aria-hidden="true" loading="lazy">`:''}
+        </div>
+        <div class="card-body">
+          <p class="cat">${p.cat}</p>
+          <h3 class="pname">${p.name}</h3>
+          <p class="fabric">${p.fabric}</p>
+          <p class="price">${p.price}</p>
+          <div class="meta-row">
+            <span class="mi">${p.sizes}</span>
+            <span class="mi">${p.colours.split("·").length} colours</span>
+          </div>
+          <a class="ask" href="${waUrl(p)}" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zM6.597 20.13a9.858 9.858 0 005.457 1.566h.004c5.448 0 9.886-4.434 9.889-9.885a9.823 9.823 0 00-2.892-6.994A9.825 9.825 0 0012.057 1.9c-5.452 0-9.886 4.434-9.889 9.884a9.86 9.86 0 001.511 5.26l.235.373-1 3.648 3.683-.964z"/></svg>
+            Enquire on WhatsApp
+          </a>
+        </div>
+      </article>
+    `).join("") : '<p class="empty">No pieces in this category yet — check back soon.</p>';
+    count.textContent = `${list.length} piece${list.length===1?"":"s"}`;
+  }
+
+  document.querySelectorAll(".chip").forEach(btn => {
+    btn.addEventListener("click", () => {
+      document.querySelectorAll(".chip").forEach(c => c.classList.remove("on"));
+      btn.classList.add("on");
+      render(btn.dataset.filter);
+    });
+  });
+
+  render("all");
+</script>
+
+</body>
+</html>
